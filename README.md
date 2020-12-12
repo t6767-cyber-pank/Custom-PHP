@@ -1,4 +1,4 @@
 # smm.9oweb.kz
-Лэндиг который отправляет письма на с контактной формы посредством phpMail
+Landig that sends emails to the contact form via phpMail
 # vichtest.kz
-Лэндинг с мультиязычностью
+Multilingual landing page
