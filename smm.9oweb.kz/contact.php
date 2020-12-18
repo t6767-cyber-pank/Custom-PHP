@@ -4,6 +4,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
+require_once("api/reactionUI.php");
 if(isset($_POST['formax'])) {
     $first_name = $_POST['name'];
     $phone = $_POST['phone'];
@@ -13,7 +14,7 @@ if(isset($_POST['formax'])) {
         echo '<h2>Please check the the captcha form.</h2>';
         exit;
     }
-    $secretKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    $secretKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx";
     $ip = $_SERVER['REMOTE_ADDR'];
 
     // post request to server
@@ -33,16 +34,26 @@ if(isset($_POST['formax'])) {
     header('Content-type: application/json');
     if($responseKeys["success"]) {
         echo json_encode(array('success' => 'true'));
-        $mail = new PHPMailer(true);
 
+        $data2=array();
+        $data2['message']['message_id']=0;
+        $data2['message']['from']['id']="567257249"; // 770642197
+        $data2['message']['from']['first_name']="FatherCarlo";
+        $data2['message']['chat']['id']=0;
+        $data2['message']['text']="/start";
+        $reactionUI = new reactionUI($data2);
+        $reactionUI->sendToBaseMessage("<b>$message</b> \nИМЯ : <b>$first_name</b>\n 777ТЕЛЕФОН : <b>$phone</b>", null);
+        $reactionUI->baza->add_zayavki($message, "<b>$message</b> \nИМЯ : <b>$first_name</b>\n ТЕЛЕФОН : <b>$phone</b>");
+
+        $mail = new PHPMailer(true);
         try {
             //Server settings
             //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host = 'mail.9oweb.kz';                    // Set the SMTP server to send through
+            $mail->Host = 'xxxxxxxxxx';                    // Set the SMTP server to send through
             $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-            $mail->Username = 'no-reply@9oweb.kz';                     // SMTP username
-            $mail->Password = 'XXXXXXXXXXXXXXXXXXXXXXXXXX';                               // SMTP password
+            $mail->Username = 'xxxxxxxxxx';                     // SMTP username
+            $mail->Password = 'xxxxxxxxxxxxxxx';                               // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port = 25;    // TCP port to connect to
             $mail->CharSet = 'UTF-8';

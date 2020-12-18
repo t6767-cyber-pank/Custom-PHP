@@ -4,6 +4,49 @@ $(function() {
 
     /*
     |--------------------------------------------------------------------------
+    | Parallax Elements
+    |--------------------------------------------------------------------------
+    */
+
+    var scene = document.getElementById('js-parallax');
+    var parallax = new Parallax(scene);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Masked Phone
+    |--------------------------------------------------------------------------
+    */
+    $(".js-masked-phone").mask("+7(999)999-99-99",{placeholder:" "});
+
+    /*
+    |--------------------------------------------------------------------------
+    | Subscribe Modal
+    |--------------------------------------------------------------------------
+    */
+
+    var is_shown_modal = false;
+
+    // Call Function in 1000 sec
+    let timerId = setTimeout(function(){
+        if(is_shown_modal == false){
+            $('#modal-subscribe').modal('show');
+            is_shown_modal = true;
+        }
+    }, 14000);
+
+    $(window).scroll(function() {
+        if(is_shown_modal == false){
+            var oTop = $('#plans').offset().top - window.innerHeight;
+            if ($(window).scrollTop() > oTop) {
+                $('#modal-subscribe').modal('show');
+                is_shown_modal = true;
+                clearTimeout(timerId);
+            }
+        }
+    });
+
+    /*
+    |--------------------------------------------------------------------------
     | Mobile menu
     |--------------------------------------------------------------------------
     */
@@ -211,39 +254,66 @@ $(function() {
 
     /*
     |--------------------------------------------------------------------------
-    | Swiper Slider
+    | Features Slider
     |--------------------------------------------------------------------------
     */
 
-	let swiperSlider = new Swiper('.jsSwiperSlider', {
+	let featuresSlider = new Swiper('.jsFeaturesSlider', {
 		speed: 600,
 		mousewheel: false,
-		loop: true,
-		autoplay: {
-			delay: 1000,
-			disableOnInteraction: false,
-		},
-		spaceBetween: 30,
+		loop: false,
+		spaceBetween: 0,
 		navigation: {
-			nextEl: '.jsSwiperNext',
-			prevEl: '.jsSwiperPrev',
+			nextEl: '.jsFeaturesSliderNext',
+			prevEl: '.jsFeaturesSliderPrev',
 		},
-		slidesPerView: 4,
-		breakpoints: {
-			1024: {
-				slidesPerView: 4,
-			},
-			768: {
-				slidesPerView: 3,
-			},
-			640: {
-				slidesPerView: 2,
-			},
-			320: {
-				slidesPerView: 1,
-			}
-		}
+		slidesPerView: 1,
+        pagination: {
+            el: '.jsFeaturesPagination',
+        },
 	});
+
+    /*
+    |--------------------------------------------------------------------------
+    | Why Desktop Slider
+    |--------------------------------------------------------------------------
+    */
+
+    let whyDesktopSlider = new Swiper('.jsWhyDesktopSlider', {
+        speed: 600,
+        mousewheel: false,
+        loop: false,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.jsWhyDesktopSliderNext',
+            prevEl: '.jsWhyDesktopSliderPrev',
+        },
+        slidesPerView: 1,
+        pagination: {
+            el: '.jsWhyDesktopPagination',
+        },
+    });
+
+    /*
+    |--------------------------------------------------------------------------
+    | Why Slider
+    |--------------------------------------------------------------------------
+    */
+
+    let whySlider = new Swiper('.jsWhySlider', {
+        speed: 600,
+        mousewheel: false,
+        loop: false,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.jsWhySliderNext',
+            prevEl: '.jsWhySliderPrev',
+        },
+        slidesPerView: 1,
+        pagination: {
+            el: '.jsWhyPagination',
+        },
+    });
 
     /*
     |--------------------------------------------------------------------------
