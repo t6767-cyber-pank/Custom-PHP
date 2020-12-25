@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "/style/fonts.css";
+
+body,html {
+	padding:0;
+	margin:0;
+	min-height:100%;
+}
+body {
+	font-family: helveticaneue, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000;
+
+	background:#fff;
+
+	padding:10px;
+	margin:0;
+}
+
+a {
+	font-size:14px;
+	color:#00266f;
+}
+
+form {
+	padding:0;
+	margin:0;
+}
+
+a img {
+	border:0;
+}
+p {
+	padding:0;
+	margin:3px 0;
+}
+label p {
+	display:inline;
+}
+
+img {
+	max-width:100%;
+}
+body#tinymce {
+	width:619px;
+}
+h1.insideTitle {
+	text-align:center;
+	font-size:30px;
+	font-weight:800;
+	margin:0;
+	padding:0 0 30px;
+}

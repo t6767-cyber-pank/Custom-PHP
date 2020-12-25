@@ -1,0 +1,3750 @@
+@charset "utf-8";
+@import url("/css/fonts.css");
+body, html{
+	padding:0;
+	margin:0;
+	height:100%;
+}
+body{
+	font-family:'OswaldWeb', sans-serif;
+	width:100%;
+	font-size:16px;
+	color:#000000;
+	font-weight:300;
+	font-style:normal;
+	position:relative;
+
+	background:#ffffff;
+
+	padding:0;
+	margin:0;
+
+	font-stretch: expanded;
+}
+body.novf{
+	overflow:hidden;
+}
+body.fixed{
+}
+form,
+p{
+	padding:0;
+	margin:0;
+}
+*::-webkit-scrollbar{
+	width:5px;
+	height:5px;
+}
+body::-webkit-scrollbar{
+	width:10px;
+	height:10px;
+}
+*::-webkit-scrollbar-track{
+	-webkit-box-shadow:inset 0 0 6px #e8e8e8;
+}
+*::-webkit-scrollbar-thumb{
+	background-color:#000000;
+	outline:1px solid #e8e8e8;
+}
+:-moz-placeholder,
+:-ms-input-placeholder,
+::-moz-placeholder,
+::-webkit-input-placeholder{
+	color:#333333;
+}
+article, aside, details, figcaption, figure, footer, header, menu, main, nav, section, summary{
+	display:block;
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	clear:both;
+}
+*{
+	font-family:'OswaldWeb', sans-serif;
+	font-weight:300;
+	box-sizing:border-box;
+}
+input:focus + label:before,
+select:focus,
+textarea:focus,
+input:focus{
+	outline:1px solid #bcfffe;
+	box-shadow:0 0 2px #bcfffe;
+}
+input[type="radio"]:focus,
+input[type="radio"]:focus + label:before{
+	outline:none;
+	box-shadow:0 0 4px 2px #bcfffe;
+}
+.error{
+	border-color:#fe0000 !important;
+}
+a{
+	color:#008c9f;
+}
+strong{
+	font-weight:400;
+}
+strong *{
+	font-weight:400 !important;
+}
+.body{
+	width:1200px;
+	margin:0 auto;
+}
+.green{
+	color:#008c9f;
+}
+.lightGray{
+	color:#999999;
+}
+.darkGray{
+	color:#666666;
+}
+.darkLink{
+	color:#696c86;
+}
+select,
+.text{
+	font-size:15px;
+
+}
+section.languages{
+	background:#ebebeb;
+}
+section.languages div.types{
+	display:inline-block;
+	font-size:0;
+}
+section.languages div.types a{
+	display:inline-block;
+	color:#fff;
+	font-size:16px;
+
+	text-decoration:none;
+	height:40px;
+	line-height:40px;
+	padding:0 15px;
+	background:#008c9f;
+	/*text-transform:uppercase;*/
+}
+section.languages div.types a:hover,
+section.languages div.types a.current{
+	background:#696c86;
+	color:#fff;
+}
+section.languages div.languages{
+	float:right;
+	padding:8px 0;
+}
+section.languages div.languages a{
+	display:inline-block;
+	height:24px;
+	line-height:24px;
+	color:#888888;
+	font-size:14px;
+
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:0 6px;
+}
+section.languages div.languages a.current{
+	border:1px solid #333333;
+	color:#333333;
+}
+menu.main{
+	padding:0;
+}
+menu.main a.menu{
+	display:none;
+}
+menu.main a.logo{
+	display:inline-block;
+	text-decoration:none;
+	font-size:0;
+	width:155px;
+	height:99px;
+	margin:17px 0 19px;
+}
+menu.main a.logo img{
+	max-width:100%;
+	max-height:100%;
+}
+menu.main div.items{
+	float:right;
+	font-size:0;
+	padding:50px 0;
+}
+menu.main div.items div.item{
+	display:inline-block;
+}
+menu.main div.items a{
+	color:#666666;
+	font-size:16px;
+
+	text-decoration:none;
+	padding:0 7px;
+	display:inline-block;
+	height:35px;
+	line-height:38px;
+}
+menu.main div.items div.item.current a,
+menu.main div.items a:hover{
+	color:#fbb03b;
+}
+menu.main div.items div.item:before{
+	content:"/";
+	color:#666666;
+	font-size:16px;
+
+}
+menu.main div.items div.item:before{
+
+}
+menu.main div.items div.item:first-child:before,
+menu.main div.items div.item.sign:before,
+menu.main div.items div.item.funds:before{
+	content:"";
+}
+menu.main div.items div.item.funds a{
+	background:#fbb03b;
+	color:#ffffff;
+}
+menu.categories{
+	background:#696c86;
+	font-size:0;
+}
+menu.categories div.item{
+	display:inline-block;
+	position:relative;
+}
+menu.categories div.items div.item:after{
+	content:"/";
+	color:#ffffff;
+	font-size:16px;
+
+	margin:0 12px;
+}
+menu.categories div.items div.item:last-child:after{
+	content:none;
+	margin:0;
+}
+menu.categories div.item > a{
+	color:#ffffff;
+	font-size:16px;
+
+	text-decoration:none;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	padding:0 7px;
+}
+menu.categories div.item > a:after{
+	content:"";
+	display:inline-block;
+	width:6px;
+	height:6px;
+	border-right:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
+	transform:rotateZ(45deg);
+	margin:-3px 0 3px 10px;
+}
+menu.categories div.item.nl > a:after{
+	display:none;
+}
+menu.categories div.item.current > a:after,
+menu.categories div.item:hover > a:after{
+	border-color:#fbb03b;
+}
+menu.categories div.item ul{
+	padding:0 12px;
+	margin:0;
+	list-style:none;
+	background:#696c86;
+	position:absolute;
+	top:40px;
+	min-width:170px;
+	max-width:150%;
+	overflow:hidden;
+	max-height:0;
+	z-index:1;
+
+	-webkit-transition:max-height 0.3s;
+	-moz-transition:max-height 0.3s;
+	-ms-transition:max-height 0.3s;
+	-o-transition:max-height 0.3s;
+	transition:max-height 0.3s;
+}
+menu.categories div.item:hover ul{
+	max-height:1000px;
+	border-top:2px solid #fbb03b;
+}
+menu.categories div.item ul li{
+
+}
+menu.categories div.item ul li + li{
+	border-top:1px solid #252525;
+}
+menu.categories div.item ul li a{
+	display:block;
+	text-decoration:none;
+	font-size:14px;
+
+	line-height:30px;
+	color:#ffffff;
+	padding:10px 7px 7px;
+}
+menu.categories div.item.current > a,
+menu.categories div.item:hover > a,
+menu.categories div.item ul li.current a,
+menu.categories div.item ul li a:hover{
+	color:#fbb03b;
+}
+menu.categories div.items{
+	float:right;
+}
+section.search{
+	padding:14px 0 15px;
+	font-size:0;
+	border-bottom:1px solid #d7d7d7;
+}
+section.search div.body > div{
+	vertical-align:top;
+	display:inline-block;
+}
+section.search div.search{
+	width:661px;
+	display:inline-block;
+}
+section.search div.search input.text{
+	width:590px;
+	height:35px;
+	line-height:35px;
+	padding:0 15px;
+	background:#ffffff;
+	border:1px solid #696c86;
+	vertical-align:top;
+}
+section.search div.search input.submit{
+	width:71px;
+	height:35px;
+	line-height:35px;
+	border:0;
+	background:#696c86;
+	cursor:pointer;
+	text-transform:capitalize;
+	color:#ffffff;
+	font-size:16px;
+}
+section.search div.contacts{
+	text-align:center;
+	width:183px;
+	line-height:40px;
+	height:35px;
+	display:inline-block;
+}
+section.search div.contacts a{
+	color:#666;
+	font-size:16px;
+	text-decoration:none;
+
+}
+section.search div.callback{
+	width:148px;
+	display:inline-block;
+	position:relative;
+}
+section.search div.callback a{
+	display:block;
+	text-align:center;
+	height:35px;
+	line-height:40px;
+	background:#696c86;
+	font-size:16px;
+	color:#ffffff;
+	text-decoration:none;
+}
+menu.main div.basket,
+section.search div.basket{
+	width: 158px;
+	display:inline-block;
+	text-align:right;
+}
+menu.main div.basket a,
+section.search div.basket a{
+	text-decoration:none;
+	position:relative;
+	color:#000000;
+	font-size:16px;
+	display:inline-block;
+	height:35px;
+	background:url("/images/basket.svg") left top no-repeat;
+	background-size:35px 28px;
+	padding:0 0 0 67px;
+
+}
+menu.main div.basket a span.amount,
+section.search div.basket a span.amount{
+	color:#ffffff;
+	font-size:16px;
+	border-radius:13px;
+	height:25px;
+	line-height:28px;
+	text-align:center;
+	min-width:25px;
+	background:#fbb03b;
+	display:inline-block;
+	position:absolute;
+	left:28px;
+	top:-7px;
+
+}
+menu.main div.basket a span.total,
+section.search div.basket a span.total{
+	display:inline-block;
+	height:35px;
+	line-height:40px;
+
+}
+menu.main div.basket a:hover,
+menu.main div.basket a:focus,
+section.search div.basket a:hover{
+	background-image:url("/images/basketH.svg");
+}
+menu.main div.basket a:focus span.total,
+menu.main div.basket a:hover span.total,
+section.search div.basket a:hover span.total{
+	color:#666666;
+}
+menu.main div.basket a:focus span.amount,
+menu.main div.basket a:hover span.amount,
+section.search div.basket a:hover span.amount{
+	background:#008c9f;
+}
+section.slider{
+	height:449px;
+	position:relative;
+	overflow:hidden;
+}
+section.slider div.slide{
+	height:449px;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	width:100%;
+
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-ms-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+section.slider div.slide span.body{
+	display:block;
+	padding:0 50px 0 720px;
+	text-align:center;
+}
+section.slider div.slide a{
+	text-decoration:none;
+	display:block;
+	height:450px;
+}
+section.slider div.slide span.body span.title{
+	display:block;
+	color:#ffffff;
+	font-size:48px;
+
+	padding:125px 0 0;
+}
+section.slider div.slide span.body span.button{
+	display:inline-block;
+	color:#ffffff;
+	font-size:22px;
+
+	text-transform:uppercase;
+	background:#fbb03b;
+	padding:17px 35px 13px;
+	margin:20px 0 0;
+}
+section.reviews,
+section.productList{
+	margin-top:20px;
+}
+section.reviews{
+	margin-bottom:40px;
+}
+section.advantages h2.title,
+section.reviews h2.title,
+section.productList h2.title{
+	text-align:center;
+	color:#666666;
+	font-size:20px;
+
+	text-transform:uppercase;
+	margin:0;
+	padding:25px 0 0;
+	vertical-align:top;
+	font-weight:500;
+}
+section.reviews h2.title a{
+	color:#ffffff;
+	background:#008c9f;
+	padding:3px 10px 4px;
+	font-size:16px;
+	text-decoration:none;
+	display:inline-block;
+	height:23px;
+
+	line-height:22px;
+	vertical-align:middle;
+	margin:-3px 0 0 18px;
+}
+section.reviews div.items,
+section.productList div.items{
+	font-size:0;
+}
+section.reviews div.items div.review,
+section.categoryInfo div.productList div.products div.product.grid,
+section.productList div.items div.product{
+	width:278px;
+	height:350px;
+	margin:25px 0 0 29px;
+	display:inline-block;
+	vertical-align:top;
+	border:1px solid #c2c2c2;
+	padding:17px 19px;
+}
+section.categoryInfo div.productList div.products div.product.grid{
+	margin:0 0 30px 30px;
+}
+section.reviews div.items div.review{
+	height:308px;
+	margin-top:0;
+}
+section.reviews div.items div.review:nth-child(4n+1),
+section.categoryInfo div.productList div.products div.product.grid:nth-child(3n+1),
+section.productList div.items div.product:nth-child(4n+1){
+	margin-left:0;
+}
+section.reviews div.items div.review a.review,
+section.categoryInfo div.productList div.products div.product.grid a.product,
+section.productList div.items div.product a.product{
+	display:block;
+	text-decoration:none;
+	height:279px;
+}
+section.reviews div.items div.review a.review{
+	height:232px;
+}
+section.reviews div.items div.review a.review img,
+section.categoryInfo div.productList div.products div.product.grid a.product img,
+section.productList div.items div.product a.product img{
+	margin:0 0 20px;
+}
+section.reviews div.items div.review a.review img{
+	margin:-18px -19px 0;
+}
+section.reviews div.items div.review a.review span.title,
+section.categoryInfo div.productList div.products div.product.grid a.product span.title,
+section.productList div.items div.product a.product span.title{
+	height:66px;
+	color:#666666;
+	font-size:16px;
+
+	text-align:center;
+	line-height:24px;
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+section.reviews div.items div.review a.review span.title{
+	height:74px;
+}
+section.categoryInfo div.productList div.products div.product.grid a.product span.price,
+section.productList div.items div.product a.product span.price{
+	display:block;
+	color:#000000;
+	font-size:22px;
+
+	text-align:center;
+}
+section.reviews div.items div.review div.buttons,
+section.categoryInfo div.productList div.products div.product.grid div.buttons,
+section.productList div.items div.product div.buttons{
+	height:35px;
+}
+section.reviews div.items div.review div.buttons{
+	text-align:center;
+}
+section.categoryInfo div.productList div.products div.product.grid div.buttons a,
+section.reviews div.items div.review div.buttons a,
+section.productList div.items div.product div.buttons a{
+	display:inline-block;
+	height:35px;
+	line-height:38px;
+	padding:0 23px;
+	color:#ffffff;
+	font-size:16px;
+	text-transform:capitalize;
+	text-decoration:none;
+	min-width:110px;
+	text-align:center;
+}
+section.categoryInfo div.productList div.products div.product.grid div.buttons a.basket,
+section.productList div.items div.product div.buttons a.basket{
+	background:#fbb03b;
+}
+section.categoryInfo div.productList div.products div.product.grid div.buttons a.more,
+section.reviews div.items div.review div.buttons a.more,
+section.productList div.items div.product div.buttons a.more{
+	background:#696c86;
+	float:right;
+}
+section.reviews div.items div.review div.buttons a.more{
+	float:none;
+}
+section.mainBanner{
+	margin-top:40px;
+}
+section.brands{
+	margin-top:40px;
+	font-size:0;
+	text-align:center;
+	background:#ebebeb;
+	padding:20px 0 15px;
+}
+section.brands a{
+	display:inline-block;
+	vertical-align:top;
+	text-decoration:none;
+	margin:0;
+	padding:1px 50px;
+	position:relative;
+	width:33%;
+	height:50px;
+}
+section.brands a img{
+max-height:40px;
+	width:auto;
+}
+section.brands a+a{
+
+}
+section.brands a+a:before{
+	content:"";
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:1px;
+	background:#343434;
+}
+section.brands a.inmarsat{
+	margin-top:-10px;
+	margin-bottom:10px;
+}
+section.brands a.inmarsat:before{
+	top:10px;
+}
+section.reviews div.slides{
+	height:308px;
+	margin:25px 0 0;
+	white-space:nowrap;
+	position:relative;
+	overflow:hidden;
+}
+section.reviews div.slides div.container{
+	position:absolute;
+	left:0;
+	top:0;
+	-webkit-transition:left 0.3s;
+	-moz-transition:left 0.3s;
+	-ms-transition:left 0.3s;
+	-o-transition:left 0.3s;
+	transition:left 0.3s;
+}
+section.reviews div.slides div.items{
+	white-space:normal;
+	display:inline-block;
+	vertical-align:top;
+	width:1200px;
+}
+section.reviews div.slides div.items + div.items{
+	margin-left:29px;
+}
+section.reviews div.pages{
+	height:46px;
+	text-align:center;
+	padding:30px 0 0;
+	font-size:0;
+}
+section.reviews div.pages a{
+	display:inline-block;
+	text-decoration:none;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	border:2px solid #008c9f;
+	margin:0 10px;
+}
+section.reviews div.pages a:hover,
+section.reviews div.pages a.current{
+	background:#008c9f;
+}
+section.mainPageInfo{
+	min-height:280px;
+	background:url("/images/mainpageinfo1.jpg") center center no-repeat;
+	background:#008c9f;
+	background-size:cover;
+	padding:20px 36px/* 20px 483px*/;
+	line-height:26px;
+	color:#ffffff;
+	font-size:18px;
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+
+	margin:0 0 -10px;
+	background:#ebebeb;
+	display:block;
+	padding:20px;
+	font-size:14px;
+	line-height:16px;
+	color:#343434;
+	min-height:auto;
+}
+section.advantages{
+
+}
+section.advantages div.list{
+	padding:0 100px;
+	font-size:0;
+	text-align:center;
+}
+section.advantages div.list div.item{
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	width:25%;
+	padding:25px 15px 0;
+}
+section.advantages div.list div.item p:first-child{
+	height:113px;
+	padding:0 0 32px;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+}
+section.advantages div.list div.item p:first-child img{
+	margin:0 auto;
+	max-height:80px;
+}
+section.advantages div.list div.item p + p{
+	color:#666666;
+	font-size:18px;
+	font-weight:400;
+}
+footer.footer{
+	background:#ebebeb;
+	margin:45px 0 0;
+	clear:both;
+	padding:27px 0;
+	font-size:0;
+}
+footer.footer dl.item{
+	display:inline-block;
+	vertical-align:top;
+	font-size:16px;
+
+	color:#666666;
+}
+footer.footer dl.item + dl.item{
+	margin-left:50px;
+}
+footer.footer dl.item dt{
+	font-size:20px;
+
+	text-transform:uppercase;
+	color:#006f7a;
+	padding:0 0 10px;
+	margin:0;
+}
+footer.footer dl.item dd + dt{
+	color:#666666;
+	padding-top:10px;
+}
+footer.footer dl.item dd{
+	padding:0;
+	margin:0;
+}
+footer.footer dl.item dd ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+footer.footer dl.item dd ul li{
+	padding:8px 0;
+}
+footer.footer dl.item dd a{
+	color:#666666;
+	font-size:16px;
+
+	text-decoration:none;
+}
+footer.footer dl.item.contacts{
+	width:175px;
+}
+footer.footer dl.item.categories{
+	width:205px;
+}
+footer.footer dl.item.customers{
+	width:300px;
+}
+footer.footer dl.item.subscribe{
+	width:345px;
+}
+footer.footer dl.item.contacts p{
+	padding:8px 0;
+}
+footer.footer dl.item.contacts dd.social{
+
+}
+footer.footer dl.item.contacts dd.social a{
+	display:inline-block;
+	width:35px;
+	height:35px;
+	margin:0 0 14px 14px;
+	background-size:contain;
+}
+footer.footer dl.item.contacts dd.social a:nth-child(3n+1){
+	margin-left:0;
+}
+footer.footer dl.item.contacts dd.social a.fb{
+	background:url("/images/social-fb.svg") center center no-repeat;
+}
+footer.footer dl.item.contacts dd.social a.tw{
+	background:url("/images/social-tw.svg") center center no-repeat;
+}
+footer.footer dl.item.contacts dd.social a.in{
+	background:url("/images/social-in.svg") center center no-repeat;
+}
+footer.footer dl.item.contacts dd.social a.yt{
+	background:url("/images/social-yt.svg") center center no-repeat;
+}
+footer.footer dl.item.contacts dd.social a.vk{
+	background:url("/images/social-vk.svg") center center no-repeat;
+}
+footer.footer dl.item.subscribe form{
+	padding:14px 0;
+}
+footer.footer dl.item.subscribe form input.text{
+	background:#ffffff;
+	border:0;
+	width:252px;
+	vertical-align:top;
+	height:35px;
+	padding:0 10px;
+	color:#a6a6a6;
+}
+footer.footer dl.item.subscribe form input.submit{
+	height:35px;
+	text-align:center;
+	width:93px;
+	background:#000000;
+	border:0;
+	color:#ffffff;
+	font-size:16px;
+
+	cursor:pointer;
+}
+footer.footer dl.item.subscribe dd.copyrights{
+	padding:50px 0 0;
+}
+footer.footer dl.item.subscribe dd.copyrights a.kazdesign{
+	display:inline;
+	width:52px;
+	height:50px;
+	float:left;
+	margin:0 17px 0 0;
+	text-decoration:none;
+}
+footer.footer dl.item.subscribe dd.copyrights{
+	color:#666666;
+	font-size:14px;
+}
+nav.breadcrumbs{
+	text-align:right;
+	padding:17px 0;
+	color:#666666;
+	font-size:12px;
+
+	text-transform:lowercase;
+}
+nav.breadcrumbs a{
+	color:#666666;
+	text-decoration:none;
+}
+h1.title{
+	text-align:center;
+	padding:0 0 20px;
+	margin:0;
+	color:#666666;
+	font-size:20px;
+	font-weight:500;
+
+	text-transform:uppercase;
+}
+section.reviewList{
+
+}
+section.reviewList div.items{
+	display:table;
+	width:100%;
+}
+section.reviewList div.items div.review{
+	width:585px;
+	height:215px;
+	border:1px solid #c1c1c1;
+	padding:19px;
+	float:left;
+	margin:0 0 30px 30px;
+}
+section.reviewList div.items div.review:nth-child(2n+1){
+	margin-left:0;
+}
+section.reviewList div.items div.review div.cover{
+	float:left;
+	width:258px;
+	margin:0 17px 0 0;
+}
+section.reviewList div.items div.review div.cover a{
+	display:block;
+	text-decoration:none;
+}
+section.reviewList div.items div.review div.info{
+	height:175px;
+	width:270px;
+	float:left;
+}
+section.reviewList div.items div.review div.info a.title{
+	display:block;
+	color:#006f7a;
+	font-size:16px;
+
+	text-transform:uppercase;
+	text-decoration:none;
+	margin:0 0 13px;
+	max-height:40px;
+	overflow:hidden;
+	line-height:19px;
+}
+section.reviewList div.items div.review div.info div.description{
+	height:72px;
+	overflow:hidden;
+	color:#666666;
+	font-size:16px;
+
+	line-height:24px;
+}
+section.ShareList div.items div.share div.info div.more,
+section.reviewList div.items div.review div.info div.more{
+	height:35px;
+	margin:17px 0 0;
+}
+section.ShareList div.items div.share div.info div.more div.date,
+section.reviewList div.items div.review div.info div.more div.date{
+	height:35px;
+	line-height:40px;
+	color:#666666;
+	font-size:16px;
+
+	float:left;
+}
+section.ShareList div.items div.share div.info div.more a.more,
+section.reviewList div.items div.review div.info div.more a.more{
+	display:inline-block;
+	height:35px;
+	line-height:40px;
+	float:right;
+	padding:0 23px;
+	background:#696c86;
+	color:#ffffff;
+	font-size:16px;
+
+	text-transform:uppercase;
+	text-decoration:none;
+}
+.pagesNum{
+	text-align:center;
+	font-size:0;
+}
+.pagesNum a{
+	display:inline-block;
+	color:#666666;
+	font-size:24px;
+
+	/*font-weight:500;*/
+	text-align:center;
+	min-width:28px;
+	padding:0 5px;
+	height:29px;
+	line-height:33px;
+	text-decoration:none;
+	margin:0 5px;
+	vertical-align:top;
+}
+.pagesNum a:hover,
+.pagesNum a.current{
+	background:#008c9f;
+	color:#ffffff;
+}
+.pagesNum .first,
+.pagesNum .last{
+	width:28px;
+	background:none !important;
+	display:inline-block;
+	height:28px;
+	text-decoration:none;
+	margin:0 16px 0 0;
+}
+.pagesNum .first:after,
+.pagesNum .last:after{
+	content:"";
+	display:block;
+	width:0;
+	height:0;
+	border:14px solid #ffffff;
+	border-right-color:#c2c2c2;
+}
+.pagesNum a.first:after{
+	border-right-color:#008c9f;
+}
+.pagesNum .last{
+	margin:0 0 0 16px;
+}
+.pagesNum .last:after{
+	border:14px solid #ffffff;
+	border-left-color:#c2c2c2;
+}
+.pagesNum a.last:after{
+	border-left-color:#008c9f;
+}
+section.textPage{
+	color:#666666;
+	font-size:16px;
+
+	line-height:24px;
+}
+section.textPage p + p{
+	margin-top:15px;
+}
+section.textPage blockquote{
+	color:#008c9f;
+	position:relative;
+	padding:0;
+	margin:0;
+}
+section.textPage blockquote:before{
+	content:'"';
+	font-size:30px;
+
+	line-height:38px;
+	display:inline-block;
+	float:left;
+	height:17px;
+}
+section.ShareList{
+
+}
+section.ShareList div.items{
+
+}
+section.ShareList div.items div.share{
+	width:100%;
+	height:250px;
+	padding:19px;
+	border:1px solid #c1c1c1;
+	margin-bottom:30px;
+}
+section.ShareList div.items div.share div.cover{
+	float:left;
+	height:210px;
+	margin:0 17px 0 0;
+}
+section.ShareList div.items div.share div.cover a{
+	display:block;
+	text-decoration:none;
+}
+section.ShareList div.items div.share div.info{
+	width:823px;
+	float:left;
+}
+section.ShareList div.items div.share div.info a.title{
+	display:block;
+	color:#666666;
+	font-size:20px;
+
+	text-decoration:none;
+	text-transform:uppercase;
+}
+section.textPage div.shareInfo div.finish,
+section.ShareList div.items div.share div.info div.finish{
+	color:#666666;
+	font-size:16px;
+
+	padding:13px 0;
+}
+section.textPage div.shareInfo div.finish span,
+section.ShareList div.items div.share div.info div.finish span{
+	color:#fbb03b;
+	text-transform:uppercase;
+}
+section.ShareList div.items div.share div.info div.description{
+	color:#666666;
+	font-size:16px;
+
+	line-height:24px;
+	height:96px;
+	overflow:hidden;
+}
+section.categoryInfo{
+	display:table;
+}
+section.categoryInfo div.leftMenu{
+	float:left;
+	margin:0 30px 0 0;
+	width:276px;
+	vertical-align:top;
+	padding:2px 0 0;
+
+	background:#696c86;
+	padding:20px;
+}
+section.categoryInfo div.leftMenu dl.filter{
+	padding:0;
+	margin:0 0 23px;
+}
+section.categoryInfo div.leftMenu dl.filter dt{
+	color:#fff;
+	font-size:18px;
+
+	text-transform:uppercase;
+	/*font-weight:500;*/
+	padding:0 0 4px;
+	margin:0;
+	border-bottom:1px solid #c2c2c2;
+}
+section.categoryInfo div.leftMenu dl.filter dt span{
+	text-transform:none;
+}
+section.categoryInfo div.leftMenu dl.filter dd{
+	padding:0;
+	margin:0;
+}
+section.categoryInfo div.leftMenu dl.filter dd ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+section.categoryInfo div.leftMenu dl.filter dd ul li{
+	padding-top:15px;
+}
+section.signInUp div.tabItems div.tab form div.cond input.checkbox,
+section.basketInfo div.deliveryForm > div div.form div.address input.checkbox,
+section.basketInfo div.fields div.checkbox input.checkbox,
+section.basketInfo div.checkbox input.checkbox,
+section.addFunds div.formBlock div.submit input.checkbox,
+section.categoryInfo div.leftMenu dl.filter dd ul li input.checkbox{
+	width:16px;
+	height:16px;
+	padding:0;
+	margin:-2px -16px 0 0;
+	border:0;
+	vertical-align:top;
+	opacity:0;
+	float:left;
+}
+section.signInUp div.tabItems div.tab form div.cond input.checkbox + label,
+section.basketInfo div.deliveryForm > div div.form div.address input.checkbox + label,
+section.basketInfo div.fields div.checkbox input.checkbox + label,
+section.basketInfo div.checkbox input.checkbox + label,
+section.addFunds div.formBlock div.submit input.checkbox + label,
+section.categoryInfo div.leftMenu dl.filter dd ul li input.checkbox + label{
+	color:#666666;
+	font-size:16px;
+
+	padding:0 0 0 27px;
+	position:relative;
+	line-height:16px;
+}
+section.categoryInfo div.leftMenu dl.filter dd ul li input.checkbox + label {
+	color:#fff;
+}
+section.signInUp div.tabItems div.tab form div.cond input.checkbox + label:before,
+section.basketInfo div.deliveryForm > div div.form div.address input.checkbox + label:before,
+section.basketInfo div.checkbox input.checkbox + label:before,
+section.basketInfo div.fields div.checkbox input.checkbox + label:before,
+section.addFunds div.formBlock div.submit input.checkbox + label:before,
+section.categoryInfo div.leftMenu dl.filter dd ul li input.checkbox + label:before{
+	content:"";
+	display:block;
+	width:14px;
+	height:14px;
+	position:absolute;
+	left:0;
+	top:-2px;
+	border:1px solid #c2c2c2;
+}
+section.signInUp div.tabItems div.tab form div.cond input.checkbox:focus + label:before,
+section.basketInfo div.deliveryForm > div div.form div.address input.checkbox:focus + label:before,
+section.basketInfo div.checkbox input.checkbox:focus + label:before,
+section.basketInfo div.fields div.checkbox input.checkbox:focus + label:before,
+section.addFunds div.formBlock div.submit input.checkbox:focus + label:before,
+section.categoryInfo div.leftMenu dl.filter dd ul li input.checkbox:focus + label:before{
+	box-shadow:0 0 2px 2px #bcfffe;
+}
+section.signInUp div.tabItems div.tab form div.cond input.checkbox:checked + label:after,
+section.basketInfo div.deliveryForm > div div.form div.address input.checkbox:checked + label:after,
+section.basketInfo div.checkbox input.checkbox:checked + label:after,
+section.basketInfo div.fields div.checkbox input.checkbox:checked + label:after,
+section.addFunds div.formBlock div.submit input.checkbox:checked + label:after,
+section.categoryInfo div.leftMenu dl.filter dd ul li input.checkbox:checked + label:after{
+	content:"";
+	display:block;
+	position:absolute;
+	left:4px;
+	top:2px;
+	width:8px;
+	height:8px;
+	background:#008c9f;
+}
+section.categoryInfo div.leftMenu dl.filter dd ul li input.checkbox:checked + label:after {
+	background:#fff;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider{
+	padding:20px 0 0;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.input{
+
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.input label{
+	color:#fff;
+	font-size:16px;
+
+	display:inline-block;
+	padding:0 6px 0 0;
+	height:28px;
+	line-height:30px;
+	vertical-align:top;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.input input.text{
+	height:28px;
+	width:57px;
+	border:1px solid #c2c2c2;
+	padding:3px 3px 0;
+	color:#666666;
+	line-height:28px;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls{
+	height:45px;
+	margin:22px 0 0;
+	position:relative;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls div.progress{
+	height:4px;
+	margin:0;
+	background:#d9d9d9;
+	position:absolute;
+	left:0;
+	top:1px;
+	width:100%;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls div.ui-slider-range{
+	height:4px;
+	position:absolute;
+	top:1px;
+	left:0;
+	width:100%;
+	background:#343434;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls span.ui-slider-handle{
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	width:6px;
+	height:6px;
+	background:#fff;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls span.ui-slider-handle:hover,
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls span.ui-slider-handle:focus{
+	background:#fbb03b;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls div.handler{
+	color:#008c9f;
+	font-size:16px;
+
+	background:#ffffff;
+	position:absolute;
+	padding:0 5px;
+	height:25px;
+	line-height:27px;
+	top:20px;
+	border:1px solid #c2c2c2;
+	display:none;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls div.handler.visible{
+	display:block;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls div.handler span{
+	position:relative;
+	white-space:nowrap;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.controls div.handler:before{
+	content:"";
+	display:block;
+	width:9px;
+	height:9px;
+	background:#ffffff;
+	border-left:1px solid #c2c2c2;
+	border-top:1px solid #c2c2c2;
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
+	transform:rotateZ(45deg);
+	position:absolute;
+	top:-6px;
+	left:50%;
+	margin:0 0 0 -4px;
+}
+section.categoryInfo div.leftMenu dl.filter dd div.slider div.input input.text + label{
+	padding-left:18px;
+}
+section.categoryInfo div.leftMenu div.buttons{
+	font-size:0;
+}
+section.categoryInfo div.leftMenu div.buttons a.reset{
+	display:inline-block;
+	height:35px;
+	line-height:39px;
+	padding:0 29px;
+	text-decoration:none;
+	color:#ffffff;
+	font-size:16px;
+
+	background:#a5a8c2;
+	vertical-align:top;
+}
+section.categoryInfo div.leftMenu div.buttons input.submit{
+	height:35px;
+	padding:0 29px;
+	cursor:pointer;
+	border:0;
+	color:#ffffff;
+	font-size:16px;
+
+	background:#fbb03b;
+	margin:0;
+	float:right;
+	line-height:39px;
+}
+section.categoryInfo div.productList{
+	float:left;
+	width:894px;
+}
+section.categoryInfo div.productList div.panel{
+	font-size:0;
+}
+section.categoryInfo div.productList div.panel > form > label{
+	display:inline-block;
+	color:#666666;
+	font-size:16px;
+
+	/*font-weight:500;*/
+	text-transform:uppercase;
+	height:28px;
+	line-height:32px;
+	padding:0 18px 0 0;
+	vertical-align:top;
+}
+section.categoryInfo div.productList div.panel form select{
+	height:28px;
+	border:1px solid #c2c2c2;
+	color:#666666;
+	line-height:22px;
+	margin:0 60px 0 0;
+	vertical-align:top;
+}
+section.categoryInfo div.productList div.panel form select option{
+	line-height:30px;
+}
+section.categoryInfo div.productList div.panel form div.items{
+	display:inline-block;
+	height:28px;
+	padding:0 58px 0 0;
+}
+section.categoryInfo div.productList div.panel form div.items input.radio{
+	padding:0;
+	border:0;
+	width:15px;
+	height:15px;
+	margin:7px -15px 0 0;
+	opacity:0;
+}
+section.categoryInfo div.productList div.panel form div.items input.radio + label{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background:url("/images/viewTypes.png") left top no-repeat;
+	padding:0;
+	margin:0;
+}
+section.categoryInfo div.productList div.panel form div.items input.radio + label + input.radio{
+	margin-left:21px;
+}
+section.categoryInfo div.productList div.panel form div.items input.radio:checked + label{
+	background-position:left bottom;
+}
+section.categoryInfo div.productList div.panel form div.items input.radio[value='list'] + label{
+	background-position:right top;
+}
+section.categoryInfo div.productList div.panel form div.items input.radio[value='list']:checked + label{
+	background-position:right bottom;
+}
+section.categoryInfo div.productList div.products{
+	font-size:0;
+	padding:27px 0 0;
+}
+section.categoryInfo div.productList div.products div.product.grid{
+}
+section.categoryInfo div.productList div.products div.product.list{
+	vertical-align:top;
+	border:1px solid #c2c2c2;
+	padding:17px 19px;
+	margin:0 0 30px;
+	height:265px;
+}
+section.categoryInfo div.productList div.products div.product.list div.photos{
+	float:left;
+	width:450px;
+	border-right:1px solid #c2c2c2;
+}
+section.categoryInfo div.productList div.products div.product.list div.photos div.cover{
+	width:309px;
+	float:left;
+}
+section.categoryInfo div.productList div.products div.product.list div.photos div.cover a{
+	display:block;
+	text-decoration:none;
+	padding:24px 12px;
+}
+section.categoryInfo div.productList div.products div.product.list div.photos div.list{
+	height:229px;
+	float:left;
+	width:80px;
+	padding:10px 0 0;
+	margin:0 0 0 45px;
+}
+section.categoryInfo div.productList div.products div.product.list div.photos div.list a{
+	display:block;
+	text-decoration:none;
+}
+section.categoryInfo div.productList div.products div.product.list div.photos div.list a + a{
+	margin-top:25px;
+}
+section.categoryInfo div.productList div.products div.product.list div.info{
+	float:left;
+	width:404px;
+	height:100%;
+	padding:0 0 0 17px;
+	overflow:hidden;
+}
+section.categoryInfo div.productList div.products div.product.list div.info a.title{
+	color:#666666;
+	font-size:16px;
+
+	text-transform:uppercase;
+	text-decoration:none;
+	display:block;
+	white-space:nowrap;
+	line-height:18px;
+}
+section.categoryInfo div.productList div.products div.product.list div.info div.price{
+	padding:17px 0;
+	font-size:0;
+}
+section.categoryInfo div.productList div.products div.product.list div.info div.price span.price{
+	display:inline-block;
+	color:#000000;
+	font-size:24px;
+
+	height:35px;
+	line-height:40px;
+	vertical-align:top;
+	padding:0 18px 0 0;
+}
+section.categoryInfo div.productList div.products div.product.list div.info div.price a.buy{
+	display:inline-block;
+	height:35px;
+	line-height:40px;
+	text-decoration:none;
+	font-size:16px;
+	color:#ffffff;
+	background:#fbb03b;
+	padding:0 23px;
+	text-transform:uppercase;
+}
+section.categoryInfo div.productList div.products div.product.list div.info div.annotation{
+	color:#666666;
+	font-size:16px;
+
+	line-height:24px;
+	height:70px;
+	overflow:hidden;
+}
+section.categoryInfo div.productList div.products div.product.list div.info div.more{
+	padding:37px 0 0;
+}
+section.categoryInfo div.productList div.products div.product.list div.info div.more a{
+	display:inline-block;
+	height:35px;
+	line-height:39px;
+	padding:0 23px;
+	text-transform:uppercase;
+	color:#ffffff;
+	font-size:16px;
+
+	background:#696c86;
+	text-decoration:none;
+}
+section.productInfo{
+	padding:87px 0 0;
+}
+section.productInfo div.mainInfo{
+	display:table;
+	width:100%;
+}
+section.productInfo div.mainInfo div.photos{
+	width:486px;
+	float:left;
+	border-right:1px solid #c2c2c2;
+	vertical-align:top;
+}
+section.productInfo div.mainInfo div.photos div.cover{
+	text-align:center;
+	padding:29px 0;
+}
+section.productInfo div.mainInfo div.photos div.list{
+	font-size:0;
+	padding:0 11px;
+}
+section.productInfo div.mainInfo div.photos div.list a{
+	display:inline-block;
+	text-decoration:none;
+	width:117px;
+	height:90px;
+	margin:0 0 20px 45px;
+}
+section.productInfo div.mainInfo div.photos div.list a:nth-child(3n+1){
+	margin-left:0;
+}
+section.productInfo div.mainInfo div.info{
+	float:left;
+	vertical-align:top;
+	width:893px;
+	margin:0 30px 0 0;
+}
+section.productInfo div.mainInfo div.photos + div.info{
+	width:407px;
+	padding:0 0 0 27px;
+}
+section.productInfo div.mainInfo div.info h1.title{
+	color:#666666;
+	font-size:24px;
+
+	text-align:left;
+}
+section.productInfo div.mainInfo div.info div.orderInfo{
+	color:#000000;
+	font-size:20px;
+
+	padding:0 0 15px;
+}
+section.productInfo div.mainInfo div.info div.annotation{
+	color:#666666;
+	font-size:16px;
+
+	line-height:24px;
+}
+section.productInfo div.mainInfo div.info div.annotation p + p{
+	padding-top:15px;
+}
+section.productInfo div.mainInfo div.info div.annotation a{
+	color:#008c9f;
+	font-size:18px;
+
+}
+section.productInfo div.mainInfo div.order{
+	float:left;
+	width:277px;
+}
+section.productInfo div.mainInfo div.order form.order{
+
+}
+section.productInfo div.mainInfo div.order form.order h2.title{
+	color:#008c9f;
+	font-size:24px;
+
+	text-transform:uppercase;
+	padding:0 0 20px;
+	margin:0;
+}
+section.productInfo div.mainInfo div.order form.order div.form{
+	background:#ebebeb;
+	padding:17px;
+}
+div.message{
+	padding:0 0 20px;
+	font-size:16px;
+
+}
+div.message.error{
+	color:#fbb03b;
+}
+section.productInfo div.mainInfo div.order form.order div.form label{
+	display:block;
+	color:#666666;
+	font-size:14px;
+
+	padding:0 0 5px;
+}
+section.basketInfo div.fields div.row .text,
+section.productInfo div.mainInfo div.order form.order div.form .text{
+	width:100%;
+	height:28px;
+	padding:0 5px;
+	background:#ffffff;
+	border:1px solid #c2c2c2;
+	margin:0 0 13px;
+	color:#666666;
+}
+section.basketInfo div.fields div.row .text{
+	margin:0;
+}
+section.productInfo div.mainInfo div.order form.order div.form textarea.text{
+	height:86px;
+	padding:5px;
+	resize:none;
+}
+section.productInfo div.mainInfo div.order form.order div.form input.submit{
+	cursor:pointer;
+	border:0;
+	color:#ffffff;
+	padding:0 15px;
+	text-transform:capitalize;
+	font-size:16px;
+	min-width:110px;
+	text-align:center;
+
+	background:#fbb03b;
+	height:35px;
+	line-height:38px;
+}
+section.productInfo div.mainInfo div.order form.order div.form h2.title{
+	font-size:20px;
+
+	color:#ffffff;
+	text-transform:none;
+	background:#008c9f;
+	text-align:center;
+	padding:0 10px;
+	height:35px;
+	line-height:38px;
+	margin:-17px -17px 0;
+}
+section.productInfo div.mainInfo div.order form.order div.form ul.list{
+	padding:18px 0;
+	margin:0;
+	list-style:none;
+}
+section.productInfo div.mainInfo div.order form.order div.form ul.list li{
+	position:relative;
+}
+section.productInfo div.mainInfo div.order form.order div.form ul.list li + li{
+	margin-top:12px;
+}
+section.basketInfo input.radio,
+section.addFunds div.formBlock div.brandTabs div.brand ul li input.radio,
+section.signInUp div.tabItems div.tab form input.radio,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio,
+section.simServices div.payTabs input.radio,
+section.productInfo div.mainInfo div.order form.order div.form ul.list li input.radio{
+	width:0;
+	height:0;
+	padding:0;
+	border:0;
+	margin:0;
+	display:inline-block;
+	opacity:0;
+	position:absolute;
+	visibility:hidden;
+}
+section.basketInfo input.radio + label,
+section.addFunds div.formBlock div.brandTabs div.brand ul li input.radio + label,
+section.signInUp div.tabItems div.tab form input.radio + label,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio + label,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio + label,
+section.simServices div.payTabs input.radio + label,
+section.productInfo div.mainInfo div.order form.order div.form ul.list li input.radio + label{
+	color:#666666;
+	font-size:16px;
+
+	padding:0 0 0 25px;
+	position:relative;
+}
+section.addFunds div.formBlock div.brandTabs div.brand ul li input.radio + label,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio + label{
+	display:block;
+}
+section.basketInfo input.radio + label:before,
+section.addFunds div.formBlock div.brandTabs div.brand ul li input.radio + label:before,
+section.signInUp div.tabItems div.tab form input.radio + label:before,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio + label:before,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio + label:before,
+section.simServices div.payTabs input.radio + label:before,
+section.productInfo div.mainInfo div.order form.order div.form ul.list li input.radio + label:before{
+	content:"";
+	display:block;
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	border:1px solid #c2c2c2;
+	left:0;
+	top:-2px;
+	position:absolute;
+}
+section.basketInfo input.radio:checked + label:after,
+section.addFunds div.formBlock div.brandTabs div.brand ul li input.radio:checked + label:after,
+section.signInUp div.tabItems div.tab form input.radio:checked + label:after,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio:checked + label:after,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio:checked + label:after,
+section.simServices div.payTabs input.radio:checked + label:after,
+section.productInfo div.mainInfo div.order form.order div.form ul.list li input.radio:checked + label:after{
+	content:"";
+	display:block;
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	background:#008c9f;
+	position:absolute;
+	left:4px;
+	top:2px;
+}
+section.productInfo div.mainInfo div.order form.order div.form div.amount{
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	padding:14px 0;
+	font-size:0;
+}
+section.productInfo div.mainInfo div.order form.order div.form div.amount label{
+	display:inline-block;
+	height:28px;
+	line-height:31px;
+	color:#666666;
+	font-size:16px;
+
+	padding:0 11px 0 0;
+	vertical-align:top;
+}
+section.productInfo div.mainInfo div.order form.order div.form div.amount input.text{
+	width:57px;
+	margin:0;
+}
+section.productInfo div.mainInfo div.order form.order div.form div.total{
+	padding:40px 0 15px;
+}
+section.productInfo div.mainInfo div.order form.order div.form div.total span.title{
+	display:inline-block;
+	color:#666666;
+	font-size:16px;
+
+	padding:0 5px 0 0;
+}
+section.productInfo div.mainInfo div.order form.order div.form div.total span.price{
+	color:#008c9f;
+	font-size:24px;
+
+}
+section.productInfo div.tabInfo{
+	padding:30px 0 0;
+	overflow:hidden;
+}
+div.tabs{
+	font-size:0;
+	border-bottom:2px solid #008c9f;
+	margin:0 0 0 -10px;
+	position:relative;
+}
+div.tabs a.tab{
+	display:inline-block;
+	color:#666666;
+	font-size:20px;
+	text-decoration:none;
+	height:35px;
+	line-height:38px;
+	padding:0 30px;
+	border:1px solid #c2c2c2;
+	margin:0 0 0 -1px;
+
+	-webkit-transform:skew(30deg);
+	-moz-transform:skew(30deg);
+	-o-transform:skew(30deg);
+	transform:skew(30deg);
+}
+div.tabs a.tab:hover,
+div.tabs a.tab.current{
+	color:#ffffff;
+	background:#008c9f;
+	border:1px solid #008c9f;
+}
+div.tabs a.tab:first-child span:before{
+	content:"";
+	display:block;
+	position:absolute;
+	left:-21px;
+	top:0;
+	width:0;
+	height:35px;
+	border-left:1px solid #c2c2c2;
+}
+div.tabs a.tab:first-child:hover span:before,
+div.tabs a.tab.current:first-child span:before{
+	display:none;
+}
+div.tabs a.tab span{
+	-webkit-transform:skew(-30deg);
+	-moz-transform:skew(-30deg);
+	-o-transform:skew(-30deg);
+	transform:skew(-30deg);
+	display:inline-block;
+	position:relative;
+}
+div.tabs div.info{
+	display:inline-block;
+	float:right;
+	font-size:18px;
+
+}
+section.productInfo div.tabInfo div.tabBlocks{
+
+}
+section.productInfo div.tabInfo div.tabBlocks > div.tab{
+	display:none;
+	padding:30px 0 0;
+	color:#666666;
+	font-size:16px;
+
+	line-height:24px;
+}
+section.productInfo div.tabInfo div.tabBlocks > div.tab h1:first-child,
+section.productInfo div.tabInfo div.tabBlocks > div.tab h2:first-child,
+section.productInfo div.tabInfo div.tabBlocks > div.tab h3:first-child,
+section.productInfo div.tabInfo div.tabBlocks > div.tab h4:first-child,
+section.productInfo div.tabInfo div.tabBlocks > div.tab h5:first-child{
+	padding-top:0;
+	margin-top:0;
+}
+section.productInfo div.tabInfo div.tabBlocks > div.tab p + p{
+	padding-top:15px;
+}
+section.productInfo div.tabInfo div.tabBlocks > div.tab.current{
+	display:table;
+	width:100%;
+}
+section.simServices{
+	overflow:hidden;
+}
+section.simServices div.payTabs{
+	padding:16px 0;
+	font-size:0;
+	position:relative;
+}
+section.basketInfo input.radio:checked + label,
+section.addFunds div.formBlock div.brandTabs div.brand ul li input.radio:checked + label,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio:checked + label,
+section.simServices div.payTabs input.radio:checked + label{
+	color:#008c9f;
+}
+section.basketInfo input.radio + label + input.radio + label,
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio + label + input.radio + label,
+section.simServices div.payTabs input.radio + label + input.radio + label{
+	margin-left:30px;
+}
+section.simServices div.tabItems{
+
+}
+section.simServices div.tabItems div.tab{
+	display:none;
+	position:relative;
+}
+section.simServices div.tabItems div.tab.current{
+	display:block;
+}
+section.simServices div.tabItems div.line{
+	border:1px solid #008c9f;
+	margin:20px 0 0;
+	padding:0;
+	position:relative;
+}
+section.simServices > div.tabItems > div.tab:before{
+	content:"";
+	display:block;
+	width:18px;
+	height:18px;
+	border-left:1px solid #008c9f;
+	border-top:1px solid #008c9f;
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
+	transform:rotateZ(45deg);
+	position:absolute;
+	top:-10px;
+	z-index:1;
+	background:#ffffff;
+}
+section.simServices > div.tabItems > div.tab.prepayment:before{
+	left:110px;
+}
+section.simServices > div.tabItems > div.tab.postpaid:before{
+	left:350px;
+}
+section.simServices > div.tabItems > div.tab div.line{
+	display:table;
+	width:100%;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock{
+	width:617px;
+	display:table-cell;
+	vertical-align:top;
+	padding:20px 67px 20px 20px;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.tabItems{
+	padding:20px 0 0;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items{
+	padding:0;
+	margin:0;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items + dl.items{
+	border-top:1px dashed #c2c2c2;
+	padding:15px 0 0;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dt{
+	color:#666666;
+	font-size:18px;
+
+	/*font-weight:500;*/
+	margin:0;
+	padding:0 0 5px;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd{
+	padding:0;
+	margin:0;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li{
+	padding:10px 0;
+	float:left;
+	width:100%;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li + li{
+	border-top:1px dashed #c2c2c2;
+	float:left;
+	width:100%;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio + label div.right{
+	float:right;
+	margin-top:3px;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio + label span{
+	float:left;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock div.description{
+	padding:20px 0 0;
+	color:#666666;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock{
+	width:561px;
+	display:table-cell;
+	background:#008c9f;
+	padding:20px;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items{
+	padding:0;
+	margin:0;
+	color:#ffffff;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dt{
+	font-size:18px;
+
+	/*font-weight:500;*/
+	margin:0;
+	padding:0 0 5px;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd{
+	padding:0;
+	margin:0;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul li{
+	padding:10px 0;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul li + li{
+	border-top:1px solid #008598;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul li span{
+	float:right;
+}
+section.simServices > div.tabItems > div.tab div.submit{
+	padding:22px 0 0;
+	display:table;
+	width:100%;
+}
+section.simServices > div.tabItems > div.tab div.submit div.info{
+	width:995px;
+	float:left;
+	color:#666666;
+	vertical-align:top;
+	padding:9px 0 10px;
+}
+section.simServices > div.tabItems > div.tab div.submit div.submit{
+	float:right;
+	padding:0;
+	display:block;
+	width:205px;
+	text-align:right;
+}
+section.simServices > div.tabItems > div.tab div.submit div.submit input.submit{
+	cursor:pointer;
+	border:0;
+	padding:0 23px;
+	background:#fbb03b;
+	color:#ffffff;
+	font-size:16px;
+
+	height:35px;
+}
+section.simServices > div.tabItems > div.tab.postpaid{
+	border:1px solid #008c9f;
+	padding:20px;
+	margin:20px 0 0;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.description{
+	color:#666666;
+	font-size:18px;
+
+	padding:0 0 10px;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.line{
+	border:0;
+	display:table;
+	width:100%;
+}
+section.basketInfo div.fields div.row label,
+section.basketInfo div.delivery div.line div.row label,
+section.basketInfo div.deliveryForm div.line div.row label,
+.authInfo label,
+section.addFunds div.formBlock div.form label,
+section.simServices > div.tabItems > div.tab.postpaid div.line label{
+	display:block;
+	color:#666666;
+	font-size:14px;
+
+	padding:0 0 10px;
+}
+.authInfo label + input + div.title{
+	padding:0 0 20px;
+	color:#666666;
+	font-size:16px;
+
+	text-transform:uppercase;
+}
+section.basketInfo div.fields div.row .text,
+section.basketInfo div.deliveryForm div.line div.row .text,
+section.basketInfo div.delivery div.line div.row .text,
+.authInfo .text,
+section.addFunds div.formBlock div.form .text,
+section.simServices > div.tabItems > div.tab.postpaid div.line .text{
+	width:100% !important;
+	padding:0 5px;
+	height:35px;
+	border:1px solid #c2c2c2;
+	color:#666666;
+}
+section.addFunds div.formBlock div.form .text,
+.authInfo .text{
+	margin-bottom:20px;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.line div.left{
+	width:594px;
+	float:left;
+	vertical-align:top;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.line div.left div.row{
+	width:287px;
+	margin:0 0 20px 20px;
+	float:left;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.line div.left div.row:nth-child(2n+1){
+	margin-left:0;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.line div.right{
+	margin-left:20px;
+	width:544px;
+	float:left;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.line div.right textarea.text{
+	resize:none;
+	padding:9px 5px;
+	height:114px;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.submit{
+	text-align:right;
+	padding:0;
+}
+section.simServices > div.tabItems > div.tab.postpaid div.submit input.submit{
+	height:35px;
+	padding:0 20px;
+	cursor:pointer;
+	border:0;
+	color:#ffffff;
+	text-transform:uppercase;
+	background:#fbb03b;
+}
+section.contactPage{
+
+}
+section.contactPage h2.title{
+	text-align:center;
+	color:#666666;
+	font-size:20px;
+
+	/*font-weight:500;*/
+	padding:0;
+	margin:0;
+}
+section.contactPage div.line{
+	display:table;
+	width:100%;
+	padding:27px 0 0;
+}
+section.contactPage div.line div.contactsMap{
+	width:585px;
+	display:table-cell;
+	vertical-align:top;
+	padding:0 30px 0 0;
+}
+section.contactPage div.line div.contactsMap div#map{
+	height:280px;
+	border:1px solid #c2c2c2;
+}
+section.contactPage div.line div.description{
+	padding:0 0 22px;
+	color:#666666;
+	font-size:16px;
+
+	line-height:24px;
+}
+section.contactPage div.line div.description p + p{
+	padding:20px 0 0;
+}
+section.contactPage div.line div.form{
+	display:table-cell;
+	vertical-align:top;
+	width:585px;
+	border:1px solid #c2c2c2;
+	padding:20px;
+}
+section.contactPage div.line div.form h2.title{
+	color:#006f7a;
+	font-size:20px;
+
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+section.contactPage div.line div.form div.description{
+	color:#666666;
+	font-size:16px;
+	line-height:24px;
+	padding:15px 0;
+	border-bottom:1px solid #c2c2c2;
+	margin:0 0 15px;
+}
+section.contactPage div.line div.form form{
+
+}
+section.signInUp div.tabItems div.tab form label,
+section.contactPage div.line div.form form label{
+	display:block;
+	font-size:14px;
+	color:#666666;
+	padding:0 0 14px;
+}
+section.signInUp div.tabItems div.tab form .text,
+section.contactPage div.line div.form form .text{
+	width:100%;
+	padding:0 10px;
+	border:1px solid #c2c2c2;
+	height:35px;
+}
+section.contactPage div.line div.form form .rows{
+	display:table;
+	width:100%;
+}
+section.contactPage div.line div.form form .row{
+	width:261px;
+	float:left;
+	margin:0 0 13px 20px;
+}
+section.contactPage div.line div.form form .row:nth-child(2n+1){
+	margin-left:0;
+}
+section.contactPage div.line div.form form textarea.text{
+	padding:10px;
+	height:134px;
+	resize:none;
+}
+section.signInUp div.tabItems div.tab form div.cond,
+section.signInUp div.tabItems div.tab form div.submit,
+section.contactPage div.line div.form form div.submit{
+	padding:20px 0 0;
+	text-align:right;
+	clear:both;
+}
+section.signInUp div.tabItems div.tab form div.cond{
+	padding:0;
+	text-align:left;
+}
+section.signInUp div.tabItems div.tab form div.submit input.submit,
+section.contactPage div.line div.form form div.submit input.submit{
+	cursor:pointer;
+	border:0;
+	color:#ffffff;
+	font-size:16px;
+	text-transform:uppercase;
+	padding:0 11px;
+	height:35px;
+	line-height:38px;
+	background:#fbb03b;
+}
+section.signInUp{
+	overflow:hidden;
+}
+section.signInUp div.tabItems{
+
+}
+section.signInUp div.tabItems div.tab{
+	display:none;
+	position:relative;
+	padding:20px;
+}
+section.signInUp div.tabItems div.tab.current{
+	display:block;
+}
+section.signInUp div.tabItems div.tab form{
+	width:950px;
+}
+section.signInUp div.tabItems div.tab form div.row{
+	float:left;
+	width:262px;
+	vertical-align:top;
+	margin:0 0 20px 20px;
+}
+section.signInUp div.tabItems div.tab form div.row:nth-child(2n+1){
+	margin-left:0;
+}
+section.signInUp div.tabItems div.tab form input.radio + label{
+	width:50%;
+	display:inline-block;
+	margin:10px 0 0;
+}
+section.signBlock{
+	overflow:hidden;
+}
+section.signBlock div.description{
+	padding:0 0 20px;
+}
+section.signBlock div.description:empty{
+	padding:0;
+}
+section.signBlock div.authInfo{
+	display:table;
+	width:100%;
+	padding:20px 0 0;
+}
+section.signBlock div.authInfo div.infoBlock{
+	display:table-cell;
+	vertical-align:top;
+	width:594px;
+	padding:0 94px 50px 0;
+	border-right:1px solid #008c9f;
+	position:relative;
+}
+section.signBlock div.authInfo div.infoBlock div.line{
+
+}
+section.signBlock div.authInfo div.infoBlock div.line + div.line{
+	padding-top:20px;
+}
+section.signBlock div.authInfo div.infoBlock div.line span.title{
+	display:inline-block;
+	color:#666666;
+	font-size:14px;
+	padding:0 10px 0 0;
+}
+section.signBlock div.authInfo div.infoBlock div.line span.value{
+	color:#000000;
+	font-size:18px;
+}
+section.signBlock div.authInfo div.submit{
+	font-size:0;
+	padding:20px 0 0;
+	position:absolute;
+	left:0;
+	width:100%;
+	bottom:0;
+}
+section.signBlock div.authInfo div.submit .edit,
+section.signBlock div.authInfo div.submit .submit{
+	display:inline-block;
+	text-transform:uppercase;
+	height:35px;
+	line-height:38px;
+	padding:0 20px;
+	cursor:pointer;
+	text-decoration:none;
+	border:0;
+	color:#ffffff;
+	background:#696c86;
+	font-size:16px;
+}
+section.signBlock div.authInfo div.submit .edit{
+	background:#fbb03b;
+}
+section.signBlock div.authInfo div.submit .edit + .submit,
+section.signBlock div.authInfo div.submit .submit + .edit{
+	margin-left:20px;
+}
+section.signBlock div.authInfo div.feedbackBlock{
+	display:table-cell;
+	vertical-align:top;
+	width:606px;
+	padding:0 20px 50px;
+	position:relative;
+}
+section.signBlock div.authInfo div.feedbackBlock h3.title{
+	padding:0 0 10px;
+	margin:0;
+	color:#666666;
+	font-size:14px;
+	font-weight:normal;
+}
+section.signBlock div.authInfo div.feedbackBlock textarea.text{
+	padding:10px;
+	width:100%;
+	border:1px solid #c2c2c2;
+	resize:none;
+	height:113px;
+}
+section.signBlock div.authInfo div.feedbackBlock div.submit{
+	left:20px;
+}
+.table{
+	border-collapse:collapse;
+	margin-bottom:25px;
+}
+.table th,
+.border th,
+.table td,
+.border td{
+	padding:10px;
+	border:1px solid #a5a8c2;
+	border-collapse:collapse;
+}
+div#callBack{
+	position:absolute;
+	top:-1000px;
+	left:0;
+	z-index:1;
+	overflow:hidden;
+	width:305px;
+
+	-webkit-transition:top 0.3s;
+	-moz-transition:top 0.3s;
+	-ms-transition:top 0.3s;
+	-o-transition:top 0.3s;
+	transition:top 0.3s;
+}
+div#callBack.visible{
+	top:40px;
+}
+div#callBack div.title{
+	color:#ffffff;
+	font-size:20px;
+	height:35px;
+	line-height:38px;
+	text-align:center;
+	-webkit-transform:skew(30deg);
+	-moz-transform:skew(30deg);
+	-o-transform:skew(30deg);
+	transform:skew(30deg);
+	background:#008c9f;
+	display:inline-block;
+	width:235px;
+	margin:0 0 0 -10px;
+}
+div#callBack div.title span{
+	display:inline-block;
+	-webkit-transform:skew(-30deg);
+	-moz-transform:skew(-30deg);
+	-o-transform:skew(-30deg);
+	transform:skew(-30deg);
+}
+div#callBack div.form{
+	background:#ffffff;
+	border:1px solid #008c9f;
+	padding:20px;
+}
+div#callBack div.form label{
+	display:block;
+	color:#666666;
+	font-size:14px;
+	padding:0 0 10px;
+}
+div#callBack div.form input.text{
+	width:100%;
+	height:35px;
+	padding:0 10px;
+	border:1px solid #c2c2c2;
+	color:#666666;
+	margin-bottom:20px;
+}
+div#callBack div.form div.submit{
+	text-align:right;
+}
+div#callBack div.form div.submit input.submit{
+	height:35px;
+	padding:0 15px;
+	color:#ffffff;
+	font-size:16px;
+	text-transform:uppercase;
+	cursor:pointer;
+	border:0;
+	background:#fbb03b;
+}
+section.addFunds{
+	overflow:hidden;
+}
+section.addFunds div.formBlock{
+	display:table;
+	width:100%;
+	padding:20px 0 0;
+}
+section.addFunds div.formBlock div.leftBlock,
+section.addFunds div.formBlock div.rightBlock{
+	display:table-cell;
+	vertical-align:top;
+	padding:0 20px;
+}
+section.addFunds div.formBlock div.leftBlock{
+	border-right:1px solid #c2c2c2;
+	padding-right:44px;
+	width:650px;
+	padding-left:0;
+}
+section.addFunds div.formBlock div.rightBlock{
+	padding-left:37px;
+	font-size:18px;
+	line-height:40px;
+}
+section.addFunds div.formBlock div.brandTabs{
+	float:left;
+	vertical-align:top;
+	width:328px;
+	padding:0 20px 0 0;
+}
+section.addFunds div.formBlock div.brandTabs div.brand{
+	display:none;
+}
+section.addFunds div.formBlock div.brandTabs div.brand.current{
+	display:block;
+}
+section.addFunds div.formBlock div.brandTabs div.brand h3.title{
+	margin:0;
+	padding:0 0 20px;
+	color:#666666;
+	font-size:16px;
+	font-weight:500;
+}
+section.addFunds div.formBlock div.brandTabs div.brand ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+section.addFunds div.formBlock div.brandTabs div.brand ul li{
+	padding:9px 0;
+	position:relative;
+}
+section.addFunds div.formBlock div.form{
+	float:left;
+	vertical-align:top;
+	width:276px;
+}
+section.addFunds div.formBlock div.form div.title{
+	margin:0;
+	padding:0 0 20px;
+	color:#666666;
+	font-size:16px;
+	font-weight:500;
+}
+section.addFunds div.formBlock div.form label.brand{
+	display:none;
+}
+section.addFunds div.formBlock div.form label.brand.current{
+	display:block;
+}
+section.addFunds div.formBlock div.submit{
+	clear:both;
+	position:relative;
+}
+section.addFunds div.formBlock div.submit input.checkbox{
+	position:absolute;
+	opacity:0;
+	width:0;
+	height:0;
+	left:0;
+	top:0;
+}
+section.addFunds div.formBlock div.submit input.checkbox + label{
+	font-size:14px;
+	display:inline-block;
+	max-width:355px;
+	margin:9px 0 10px;
+}
+section.addFunds div.formBlock div.submit input.submit{
+	float:right;
+	cursor:pointer;
+	border:0;
+	height:35px;
+	padding:0 10px;
+	color:#ffffff;
+	background:#fbb03b;
+	text-transform:capitalize;
+	font-size:16px;
+}
+div#callBack div.form div.submit input.submit:hover,
+section.signBlock div.authInfo div.submit .edit:hover,
+section.signInUp div.tabItems div.tab form div.submit input.submit:hover,
+section.contactPage div.line div.form form div.submit input.submit:hover,
+section.simServices > div.tabItems > div.tab.postpaid div.submit input.submit:hover,
+section.simServices > div.tabItems > div.tab div.submit div.submit input.submit:hover,
+section.categoryInfo div.productList div.products div.product.list div.info div.price a.buy:hover,
+section.productInfo div.mainInfo div.order form.order div.form input.submit:hover,
+section.categoryInfo div.productList div.products div.product.grid div.buttons a.basket:hover,
+section.productList div.items div.product div.buttons a.basket:hover,
+section.slider div.slide a:hover span.body span.button,
+menu.main div.items div.item.funds a:hover{
+	background:#008c9f;
+	outline:1px solid #fbb03b;
+}
+section.basketInfo{
+	overflow:hidden;
+}
+section.basketInfo > p:first-child{
+	padding-top:5px;
+}
+section.basketInfo div.basketSteps{
+	font-size:0;
+	text-align:center;
+	padding:0 0 30px;
+}
+section.basketInfo div.basketSteps div.step{
+	display:inline-block;
+	white-space:nowrap;
+	color:#666666;
+	font-size:16px;
+	height:34px;
+	line-height:36px;
+}
+section.basketInfo div.basketSteps div.step.current{
+	color:#008c9f;
+}
+section.basketInfo div.basketSteps div.step:before{
+	content:"";
+	display:inline-block;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	margin:0 12px 0 0;
+	height:33px;
+	vertical-align:middle;
+}
+section.basketInfo div.basketSteps div.step:after{
+	content:"";
+	display:inline-block;
+	width:58px;
+	height:0;
+	border-bottom:2px dotted #c2c2c2;
+	vertical-align:middle;
+	margin:0 17px;
+}
+section.basketInfo div.basketSteps div.step:last-child:after{
+	display:none;
+}
+section.basketInfo div.basketSteps div.step.step1:before{
+	background-image:url("/images/basketGray.png");
+	width:42px;
+}
+section.basketInfo div.basketSteps div.step.step1.current:before{
+	background-image:url("/images/basketBlue.png");
+}
+section.basketInfo div.basketSteps div.step.step2:before{
+	background-image:url("/images/detailsGray.png");
+	width:35px;
+}
+section.basketInfo div.basketSteps div.step.step2.current:before{
+	background-image:url("/images/detailsBlue.png");
+}
+section.basketInfo div.basketSteps div.step.step3:before{
+	background-image:url("/images/cardGray.png");
+	width:41px;
+}
+section.basketInfo div.basketSteps div.step.step3.current:before{
+	background-image:url("/images/cardBlue.png");
+}
+section.basketInfo div.list{
+
+}
+section.basketInfo div.list div.item{
+	border:1px solid #c2c2c2;
+	padding:20px 0;
+	display:table;
+	width:100%;
+}
+section.basketInfo div.list div.item + div.item{
+	margin:20px 0 0;
+}
+section.basketInfo div.list div.item > div{
+	display:table-cell;
+	vertical-align:middle;
+	padding:0 20px;
+	color:#666666;
+	letter-spacing:normal;
+}
+section.basketInfo div.list div.item > div span{
+	color:#000000;
+}
+section.basketInfo div.list div.item > div + div{
+	border-left:1px solid #c2c2c2;
+}
+section.basketInfo div.list div.item div.cover{
+	width:144px;
+	min-width:144px;
+	max-width:144px;
+}
+section.basketInfo div.list div.item div.cover a{
+	display:block;
+	text-decoration:none;
+}
+section.basketInfo div.list div.item div.title{
+	border-left:0;
+	width:250px;
+}
+section.basketInfo div.list div.item div.title a{
+	color:#666666;
+	font-size:16px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+section.basketInfo div.list div.item div.title a:hover{
+	text-decoration:underline;
+}
+section.basketInfo div.list div.item div.price{
+	width:205px;
+	color:#000000;
+}
+section.basketInfo div.list div.item div.amount{
+	width:327px;
+}
+section.basketInfo div.list div.item div.amount label{
+	vertical-align:middle;
+}
+section.basketInfo div.list div.item div.amount input.text{
+	width:57px;
+	height:28px;
+	color:#666666;
+	padding:0 5px;
+	margin:0 0 0 10px;
+	vertical-align:middle;
+}
+section.basketInfo div.list div.item div.total{
+	width:249px;
+}
+section.basketInfo div.list div.item div.total span{
+	color:#000000;
+}
+section.basketInfo div.list div.item div.delete{
+
+}
+div.basketHistory div.table div.row div.cell a.delete,
+section.basketInfo div.list div.item div.delete a{
+	color:#666666;
+	font-size:18px;
+	text-decoration:none;
+	padding:0 0 0 22px;
+	position:relative;
+}
+div.basketHistory div.table div.row div.cell a.delete{
+	font-size:16px;
+}
+div.basketHistory div.table div.row div.cell a.delete:hover,
+section.basketInfo div.list div.item div.delete a:hover{
+	text-decoration:underline;
+}
+div.basketHistory div.table div.row div.cell a.delete:before,
+div.basketHistory div.table div.row div.cell a.delete:after,
+section.basketInfo div.list div.item div.delete a:before,
+section.basketInfo div.list div.item div.delete a:after{
+	content:"";
+	display:block;
+	position:absolute;
+	width:15px;
+	height:3px;
+	background:#c2c2c2;
+	left:0;
+	top:7px;
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
+	transform:rotateZ(45deg);
+}
+div.basketHistory div.table div.row div.cell a.delete:after,
+section.basketInfo div.list div.item div.delete a:after{
+	-webkit-transform:rotateZ(-45deg);
+	-moz-transform:rotateZ(-45deg);
+	-ms-transform:rotateZ(-45deg);
+	-o-transform:rotateZ(-45deg);
+	transform:rotateZ(-45deg);
+}
+section.basketInfo div.actions{
+	margin:25px 0 40px;
+	display:table;
+	width:100%;
+}
+section.basketInfo div.info div.actions{
+	margin:0;
+}
+section.basketInfo div.actions + div.actions{
+	margin-top:0;
+}
+div.tabs div.info > div,
+section.basketInfo div.actions > div{
+	height:30px;
+	line-height:32px;
+	float:left;
+	vertical-align:top;
+	text-transform:uppercase;
+	color:#666666;
+	font-size:18px;
+}
+div.tabs div.info > div + div,
+section.basketInfo div.actions > div + div{
+	margin-left:35px;
+}
+div.tabs div.info > div.price.discount .value,
+section.basketInfo div.actions > div.price.discount .value{
+	text-decoration:line-through;
+}
+div.tabs div.info > div.promo,
+section.basketInfo div.actions > div.promo{
+	float:right;
+	font-size:0;
+}
+div.tabs div.info > div.promo span.label,
+section.basketInfo div.actions > div.promo span.label{
+	display:inline-block;
+	height:30px;
+	line-height:32px;
+	font-size:18px;
+	margin:0 15px 0 0;
+	vertical-align:top;
+}
+section.basketInfo div.actions > div.promo div.value{
+	display:inline-block;
+}
+section.basketInfo div.actions > div.promo input.text{
+	width:140px;
+	height:30px;
+	padding:0 5px;
+	border:1px solid #696c86;
+	vertical-align:top;
+}
+section.basketInfo div.actions > div.promo input.submit{
+	padding:0 15px;
+	cursor:pointer;
+	height:30px;
+	border:0;
+	color:#ffffff;
+	line-height:32px;
+	background:#008c9f;
+}
+section.basketInfo div.info{
+
+}
+section.basketInfo div.info div.item{
+	width:25%;
+	margin:0;
+	height:auto;
+	vertical-align:top;
+}
+section.basketInfo div.info div.item span.title{
+	color:#666666;
+	font-size:18px;
+	display:block;
+	padding:0 5px 0 0;
+	text-transform:none;
+}
+section.basketInfo div.info div.item span.value{
+	color:#000000;
+	font-size:20px;
+	display:block;
+}
+section.basketInfo div.info div.item.back{
+	text-align:right;
+}
+section.basketInfo div.info div.item a.back{
+	display:inline-block;
+	height:35px;
+	line-height:38px;
+	padding:0 15px;
+	text-transform:uppercase;
+	color:#ffffff;
+	background:#fbb03b;
+	text-decoration:none;
+}
+section.basketInfo div.controls{
+	text-align:right;
+	font-size:0;
+	letter-spacing:30px;
+}
+section.basketInfo div.submit .back,
+section.basketInfo div.submit .submit,
+section.basketInfo div.controls .clear,
+section.basketInfo div.controls .submit{
+	height:35px;
+	line-height:38px;
+	vertical-align:top;
+	cursor:pointer;
+	border:0;
+	text-decoration:none;
+	color:#ffffff;
+	padding:0 15px;
+	display:inline-block;
+	font-size:16px;
+	letter-spacing:normal;
+}
+section.basketInfo div.submit .back,
+section.basketInfo div.controls .clear{
+	background:#696c86;
+}
+section.basketInfo div.submit .submit,
+section.basketInfo div.controls .submit{
+	background:#fbb03b;
+}
+section.basketInfo div.tabItems{
+
+}
+section.basketInfo div.tabItems div.tab{
+	display:none;
+}
+section.basketInfo div.tabItems div.tab.current{
+	display:block;
+}
+section.basketInfo > div.tabItems > div.tab{
+}
+section.basketInfo div.delivery{
+	position:relative;
+	border:2px solid #008c9f;
+	border-top:0;
+	padding:20px;
+}
+section.basketInfo div.delivery + div.delivery{
+	border:0;
+}
+section.basketInfo div.delivery div.title{
+	color:#666666;
+	font-size:14px;
+	padding:0 0 15px;
+}
+section.basketInfo div.deliveryForm{
+	background:#008c9f;
+	margin:0 0 20px;
+	padding:20px;
+	color:#ffffff;
+}
+section.basketInfo div.deliveryForm > div{
+	display:none;
+}
+section.basketInfo div.deliveryForm > div.current{
+	display:table;
+	width:100%;
+}
+section.basketInfo div.deliveryForm > div div.description{
+	line-height:22px;
+	width:565px;
+	padding:0 20px 0 0;
+	float:left;
+}
+section.basketInfo div.deliveryForm > div.deliveryPickup div.description{
+	padding:0;
+	width:auto;
+	float:none;
+}
+section.basketInfo #business div.deliveryForm{
+	background:none;
+	border:1px solid #008c9f;
+	padding:0;
+}
+section.basketInfo #business div.deliveryForm > div div.form,
+section.basketInfo #business div.deliveryForm > div div.description{
+	width:auto;
+	float:none;
+	padding:20px;
+}
+section.basketInfo #business div.deliveryForm > div div.description{
+	background:#008c9f;
+	-webkit-columns:520px 2;
+	-moz-columns:520px 2;
+	columns:520px 2;
+
+	column-gap:118px;
+	-moz-column-gap:118px;
+	-webkit-column-gap:118px;
+}
+section.basketInfo div.deliveryForm > div div.description p + p{
+	padding:15px 0 0;
+}
+section.basketInfo #business div.deliveryForm > div div.description p{
+	padding:0 0 15px;
+}
+section.basketInfo #business div.deliveryForm > div div.description p + p{
+	padding-top:0;
+}
+section.basketInfo #business div.deliveryForm > div div.description p:last-child{
+	padding:0;
+}
+section.basketInfo div.deliveryForm > div div.form{
+	width:593px;
+	float:left;
+	background:#ffffff;
+	padding:20px;
+	color:#666666;
+}
+section.basketInfo div.deliveryForm > div div.form div.title{
+	text-transform:uppercase;
+	padding:0 0 20px;
+}
+section.basketInfo div.deliveryForm > div div.form div.title a{
+	display:inline-block;
+	margin-left:50px;
+	text-transform:none;
+}
+section.basketInfo div.deliveryForm > div div.form div.grid{
+	display:table;
+	width:100%;
+}
+section.basketInfo div.deliveryForm > div div.form div.row{
+	width:266px;
+	float:left;
+	margin:0 0 20px 20px;
+	position:relative;
+}
+section.basketInfo div.deliveryForm > div div.form div.row:nth-child(2n+1){
+	margin-left:0;
+}
+section.basketInfo div.deliveryForm > div div.form div.grid.items div.row label{
+	display:inline-block;
+	width:30%;
+	float:left;
+	height:35px;
+	line-height:37px;
+}
+section.basketInfo div.deliveryForm > div div.form div.row .text{
+	width:70%;
+	float:left;
+	height:35px;
+	padding:0 5px;
+	background:#ffffff;
+	border:1px solid #c2c2c2;
+}
+section.basketInfo div.payMethods{
+	padding:0 0 20px;
+	margin:0 20px 20px;
+	font-size:14px;
+	color:#666666;
+	line-height:16px;
+	position:relative;
+	border-bottom:1px solid #c2c2c2;
+}
+section.basketInfo div.payMethods span.label{
+	display:inline-block;
+	line-height:16px;
+	padding:0 20px 0 0;
+	vertical-align:top;
+}
+section.basketInfo div.payTabs{
+}
+section.basketInfo div.payTabs > div{
+	display:none;
+	color:#666666;
+	line-height:24px;
+}
+section.basketInfo div.payTabs > div p + p{
+	padding:15px 0 0;
+}
+section.basketInfo div.payTabs > div div.payTabs{
+	padding:0 20px;
+}
+section.basketInfo div.payTabs > div div.payTabs > div{
+	padding:0 0 20px;
+}
+section.basketInfo div.payTabs > div div.payTabs > div:empty{
+	padding:0;
+}
+section.basketInfo div.payTabs > div:empty{
+	padding:0;
+}
+section.basketInfo div.payTabs > div.current{
+	display:block;
+}
+section.basketInfo div.fields{
+	display:table;
+	padding:0 20px;
+	width:100%;
+}
+section.basketInfo div.payTabs > div div.payTabs > div div.fields{
+	padding:0;
+}
+section.basketInfo div.fields div.row{
+	float:left;
+	vertical-align:top;
+	width:275px;
+}
+section.basketInfo div.fields div.row + div.row{
+	margin-left:20px;
+}
+/*section.basketInfo div.fields div.row label {
+	display:block;
+	color:#666666;
+	font-size:14px;
+	padding:0 0 15px;
+}*/
+section.basketInfo div.checkbox,
+section.basketInfo div.fields div.checkbox{
+	clear:both;
+	position:relative;
+	padding:20px 0 0;
+}
+section.basketInfo div.checkbox{
+	padding:0 20px;
+}
+section.basketInfo div.checkbox input.checkbox + label,
+section.basketInfo div.fields div.checkbox input.checkbox + label{
+	display:inline-block;
+}
+section.basketInfo div.checkbox input.checkbox + label a,
+section.basketInfo div.fields div.checkbox input.checkbox + label a{
+	color:#fbb03b;
+}
+section.basketInfo div.submit{
+	padding:40px 0 0;
+	letter-spacing:20px;
+	text-align:right;
+}
+section.basketInfo div.deliveryForm div.line,
+section.basketInfo div.delivery div.line{
+	letter-spacing:20px;
+	font-size:0;
+}
+section.basketInfo div.deliveryForm div.line.hidden{
+	display:none;
+}
+section.basketInfo div.deliveryForm div.line + div.line,
+section.basketInfo div.delivery div.line + div.line{
+	margin-top:20px;
+}
+section.basketInfo div.deliveryForm div.line div.row,
+section.basketInfo div.delivery div.line div.row{
+	letter-spacing:normal;
+	vertical-align:top;
+	display:inline-block;
+	font-size:16px;
+	float:none !important;
+}
+section.basketInfo div.deliveryForm div.line div.row{
+	margin:0 !important;
+}
+section.basketInfo div.deliveryForm div.line div.row.w4,
+section.basketInfo div.delivery div.line div.row.w4{
+	width:274px;
+}
+section.basketInfo div.delivery div.line div.row.w34{
+	width:862px;
+}
+section.basketInfo div.delivery div.line div.row.w3{
+	width:372px;
+}
+section.basketInfo div.delivery div.line div.row.w2{
+	width:568px;
+}
+section.basketInfo div.deliveryForm > div div.form div.title,
+section.basketInfo div.delivery div.title{
+	color:#666666;
+	font-size:16px;
+	text-transform:uppercase;
+	margin:20px 0 0;
+}
+section.basketInfo div.deliveryForm > div div.form div.address{
+	padding:0 0 20px;
+	position:relative;
+}
+section.basketInfo h2.title.thank{
+	text-align:center;
+	color:#696c86;
+	font-size:24px;
+	font-weight:normal;
+	text-transform:uppercase;
+	margin:0;
+	padding:0 0 30px;
+}
+section.basketInfo div.basketNotify{
+	background:#a5a8c2;
+	color:#ffffff;
+	padding:20px 20px 20px 70px;
+	font-size:18px;
+	line-height:24px;
+	position:relative;
+	margin:20px 0 0;
+}
+section.basketInfo div.basketNotify:before{
+	content:"!";
+	font-size:56px;
+	font-weight:500;
+	position:absolute;
+	display:block;
+	width:70px;
+	height:88px;
+	text-align:center;
+	left:0;
+	top:0;
+	line-height:100px;
+}
+div.basketHistory{
+
+}
+div.basketHistory div.table{
+	display:table;
+	width:100%;
+	letter-spacing:normal;
+}
+div.basketHistory div.table div.row{
+	display:table-row;
+}
+div.basketHistory div.table div.row div.cell{
+	display:table-cell;
+	text-align:left;
+	vertical-align:middle;
+	color:#666666;
+	font-size:16px;
+	border-top:2px solid #ebebeb;
+	padding:25px 25px 25px 0;
+	position:relative;
+}
+div.basketHistory div.table div.row div.cell:first-child{
+	max-width:235px;
+}
+div.basketHistory div.table div.row div.cell.more{
+	width:236px;
+	max-width:236px;
+}
+div.basketHistory div.table div.row div.cell.id{
+	width:158px;
+	max-width:158px;
+}
+div.basketHistory div.table div.row div.cell.date{
+	width:162px;
+	max-width:162px;
+}
+div.basketHistory div.table div.row div.cell.price{
+	width:193px;
+	max-width:193px;
+}
+div.basketHistory div.table div.row div.cell.status{
+	width:201px;
+	max-width:201px;
+}
+div.basketHistory div.table div.row div.cell.delete{
+	max-width:109px;
+	width:109px;
+}
+div.basketHistory div.table div.row div.cell.repeat{
+	max-width:140px;
+	width:140px;
+}
+div.basketHistory div.table div.row div.cell span.amount{
+	color:#666666;
+	font-size:16px;
+}
+div.basketHistory div.table div.row:first-child div.cell{
+	border:0;
+}
+div.basketHistory div.table div.row.header div.cell{
+	padding:15px 25px 15px 0;
+}
+div.basketHistory div.table div.row div.cell a.more{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#666666;
+	border-bottom:1px dashed #666666;
+	display:inline-block;
+	padding:0 0 2px;
+}
+div.basketHistory div.table div.row div.cell.more:hover a.more,
+div.basketHistory div.table div.row div.cell a.more:hover,
+div.basketHistory div.table.current div.row div.cell a.more{
+	color:#0097ac;
+	border-bottom-color:#0097ac;
+}
+div.basketHistory div.table div.row div.cell.more:before{
+	content:"";
+	display:inline-block;
+	width:10px;
+	height:10px;
+	border-left:1px solid #c2c2c2;
+	border-bottom:1px solid #c2c2c2;
+	-webkit-transform:rotateZ(-45deg);
+	-moz-transform:rotateZ(-45deg);
+	-ms-transform:rotateZ(-45deg);
+	-o-transform:rotateZ(-45deg);
+	transform:rotateZ(-45deg);
+	margin:-3px 10px 0 5px;
+	vertical-align:top;
+}
+div.basketHistory div.table div.row div.cell:hover:first-child:before,
+div.basketHistory div.table.current div.row div.cell:first-child:before{
+	border-color:#0097ac;
+}
+div.basketHistory div.table div.row.header div.cell:first-child:before{
+	display:none;
+}
+div.basketHistory div.table div.row div.cell:last-child{
+	text-align:right;
+	padding-right:0;
+}
+div.basketHistory div.table div.row div.cell.status{
+	text-transform:uppercase;
+}
+div.basketHistory div.table div.row div.cell a.repeat{
+	display:inline-block;
+	height:35px;
+	line-height:38px;
+	padding:0 10px;
+	color:#ffffff;
+	text-transform:uppercase;
+	background:#fbb03b;
+	text-decoration:none;
+}
+div.basketHistory div.table div.row.colspan{
+	display:table-caption;
+}
+div.basketHistory div.table + div.basket{
+	border:1px solid #008c9f;
+	padding:0 20px;
+	display:none;
+}
+div.basketHistory div.table.current + div.basket.visible{
+	display:block;
+}
+div.basketHistory div.table + div.basket div.cell{
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#000000;
+	font-size:18px;
+}
+div.basketHistory div.table + div.basket div.row div.cell{
+	border-top-width:1px;
+}
+div.basketHistory div.table + div.basket div.cell.title{
+	width:360px;
+}
+div.basketHistory div.table + div.basket div.cell.price{
+	width:140px;
+}
+div.basketHistory div.table + div.basket div.cell.amount{
+	width:150px;
+}
+div.scroll{
+	overflow:auto;
+}
+section.textPage h3{
+	font-size:18px;
+	color:#0097ac;
+	margin:50px 0 30px 0;
+}
+.center{
+	text-align:center;
+}
+table.steps td{
+	padding:1%;
+	vertical-align:top;
+}
+p.hide.h{
+	display:none;
+}
+span.time{
+	width:100px;
+	text-align:center;
+	display:inline-block;
+}
+span.time + span{
+	width:100px;
+}
+span.currency{
+	font-size:14px;
+}
+span.nf,
+span.nf span.currency{
+	float:none !important;
+}
+span.hint{
+	font-size:12px;
+}
+.cyan{
+	color:#008c9f;
+}
+p.unit-desc{
+	color:#333333;
+}
+section.simServices > div.tabItems > div.tab div.line div.leftBlock dl.items dd ul li input.radio + label span.title{
+	width:60%;
+	line-height:24px;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul li span{
+	width:25%;
+	display:inline-block;
+	float:left;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul li span.title{
+	width:75%;
+	display:inline-block;
+	float:left;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul li span.sub-title{
+	width:12%;
+	text-align:center;
+	float:left;
+}
+section.simServices > div.tabItems > div.tab div.line div.rightBlock dl.items dd ul li{
+	overflow:hidden;
+}
+.textPage ol{
+	counter-reset:item;
+	padding:0;
+	margin:5px 0 10px 0;
+}
+.textPage ol li{
+	display:block;
+	margin-bottom:5px;
+}
+.textPage ol li:before{
+	content:counter(item) ". ";
+	counter-increment:item;
+	color:#008c9f;
+	font-size:20px;
+	font-weight:400;
+}
+.textPage ul{
+	padding:0 0 0 15px;
+	margin:15px 0 40px 0;
+}
+.textPage ul li{
+	position:relative;
+	margin-bottom:10px;
+	list-style-type:none;
+}
+.textPage ul li::before{
+	content:"";
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	background:#008c9f;
+	position:absolute;
+	top:8px;
+	left:-12px;
+}
+.bw-text{
+	background:#696c86;
+	color:#ffffff;
+	padding:20px;
+	vertical-align:top;
+}
+table.table-nb{
+	border:0 none;
+	margin-bottom:40px;
+}
+table.half{
+	width:100%;
+	margin:30px 0;
+}
+table.half tr td{
+	width:49%;
+	vertical-align:top;
+}
+table.half tr td:first-child{
+	padding-right:1%;
+}
+table.half tr td:last-child{
+	padding-left:1%;
+}
+ul.ul{
+	margin-bottom:15px;
+}
+section.advantages .item a{
+	margin-top:10px;
+	display:inline-block;
+}
+table.steps{
+	margin:20px 0;
+}
+table.icons tr td:first-child{
+	width:70px;
+}
+table.icons tr td:last-child{
+	width:auto;
+}
+table.center{
+	margin:30px 0;
+}
+table.m-25{
+	margin:25px 0;
+}
+table.payment{
+	width:100%;
+}
+table.payment tr td{
+	width:33%;
+}
+div.rows-left{
+	float:left;
+}
+div.rows-left div.row{
+	float:none !important;
+}
+section.signInUp div.tabItems div.tab form div.rows-left div.row{
+	margin:0 0 20px 0;
+}
+section.messages{
+	padding:20px;
+	margin-bottom:20px;
+}
+div.pro-car-out{
+	position:relative;
+}
+div.pro-car-out ul.pag{
+	margin:0;
+	padding:0;
+	width:100%;
+	position:absolute;
+	bottom:10px;
+	left:0;
+	text-align:center;
+	height:16px;
+}
+div.pro-car-out ul.pag li{
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	border:2px solid #ffffff;
+	display:inline-block;
+	margin-right:10px;
+	cursor:pointer;
+}
+div.pro-car-out ul.pag li.active{
+background:#fff;
+}
+table.border{
+	border-collapse:collapse;
+}
+table td ul.ul{
+	margin-top:0;
+}
+form.step2 .hidden{
+	display:none;
+}
+span.center{
+	text-align:center;
+}
+div.leftBlock dl.items li.head span.title{
+	width:62%;
+	text-align:left;
+}
+div.leftBlock dl.items li.head span{
+	width:19%;
+	color:#666666;
+	text-align:center;
+	display:inline-block;
+	float:left;
+}
+div.leftBlock dl.items li.head span:last-child{
+	text-align:left;
+}
+/**/
+a.btn-whatsapp,
+a.btn-skype{
+	display: block;
+	vertical-align: middle;
+	height: 25px;
+	width: 25px;
+	background:transparent   url(../images/whatsapp.png) no-repeat center center !important;
+	background-size:contain !important;
+	margin: 0 20px 0 0;
+	float: right;
+	text-decoration: none;
+}
+a.btn-skype{
+	background-image:url("../images/skype.png")  !important;
+}
+section.search div.callback a.callback {
+	float:right;
+	width:300px;
+}
+div.search form .text{
+	float:left;
+}
+section.search div.callback a.callback {
+	float: right;
+	width: auto;
+	padding: 0 15px;
+}
+section.search div.contacts{
+	width:133px;
+}
+section.search div.callback{
+	width:245px;
+}
+menu.categories div.item.red a{
+	color: #ff4848;
+}
+
+div.product, section.productInfo div.mainInfo div.photos div.cover{
+	position:relative;
+}
+
+div.product::before, div.product::after, section.productInfo div.mainInfo div.photos div.cover::before, section.productInfo div.mainInfo div.photos div.cover::after{
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	position:absolute;
+}
+
+div.product.ico-action::before, section.productInfo div.mainInfo div.photos div.cover.ico-action::before{
+	width:56px;
+	height:56px;
+	right:5px;
+	top:5px;
+	content:'';
+	display:block;
+	background-image:url("/images/xx-icon-action.png");
+	background-size:92% !important;
+}
+
+section.productInfo div.mainInfo div.photos div.cover.ico-action::before{
+	width:84px;
+	height:84px;
+	right:5px;
+	top:5px;
+}
+
+div.product.ico-discount::before, section.productInfo div.mainInfo div.photos div.cover.ico-discount::before{
+	width:70px;
+	height:70px;
+	right:4px;
+	top:8px;
+	content:'';
+	display:block;
+	background-image:url("/images/xx-icon-discount.png");
+	background-size:92% !important;
+}
+
+section.productInfo div.mainInfo div.photos div.cover.ico-discount::before{
+	width:105px;
+	height:105px;
+	right:5px;
+	top:5px;
+}
+
+div.product span.hasgift, section.productInfo div.mainInfo div.photos div.cover span.hasgift{
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	position:absolute;
+	width:76px;
+	height:76px;
+	left:-9px;
+	top:-9px;
+	content:'';
+	display:block;
+	background-image:url("/images/xx-icon-gift.png");
+}
+
+section.productInfo div.mainInfo div.photos div.cover span.hasgift{
+	width:114px;
+	height:114px;
+	left:-13px;
+	top:-13px;
+}
+
+div.product.bestcost::after, section.productInfo div.mainInfo div.photos div.cover.bestcost::after{
+	width:110px;
+	height:31px;
+	right:-7px;
+	top:145px;
+	content:'';
+	display:block;
+	background-image:url("/images/xx-icon-best.png");
+}
+
+section.productInfo div.mainInfo div.photos div.cover.bestcost::after{
+	width:165px;
+	height:47px;
+	top:278px;
+	right:-10px;
+}
+
+p#recaptchaError2, p#recaptchaError{
+	display:block;
+	padding:10px 0;
+	font-size:16px;
+}
+
+.border-capcha{
+	border:1px solid #e8e8e8;
+	border-radius:5px;
+	overflow:hidden;
+	height:72px;
+}
+
+.border-capcha > *{
+	position:relative;
+	left:-2px;
+	top:-2px;
+}
+a.show-banner-gift img{
+	width:100%;
+	height:auto;
+}
+
+a.show-banner-gift {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	width: 118px;
+	height: 103px;
+	margin-left: 196px;
+	margin-top: 15px;
+}
+.banner-gift-close{
+	display: none;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	overflow: hidden;
+	background: rgba(0,0,0,0.7);
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+z-index:1000;
+}
+.banner-gift-close.show{
+	display:block;
+}
+.banner-gift-close a.close-it{
+	display:block;
+	height:30px;
+	width:30px;
+	position:absolute;
+	right:15px;
+	top:15px;
+}
+.banner-gift-close a.close-it::before,
+.banner-gift-close a.close-it::after{
+content:'';
+	display:block;
+	height:4px;
+	width:20px;
+	position:absolute;
+	top:0; right:0; bottom:0; left:0;
+	margin:auto;
+	background:#fff;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+.banner-gift-close a.close-it::after{
+	height:20px;
+	width:4px;
+}
+.banner-gift-close a.close-it:hover::before,
+.banner-gift-close a.close-it:hover::after{
+background:#ddd;
+}
+.banner-gift-close .img-banner{
+	text-decoration:none;
+}
+.banner-gift-close .img-banner img{
+	display:block;
+	position:absolute;
+	top:0; right:0; bottom:0; left:0;
+	max-width:90%;
+	max-height:90%;
+	margin:auto;
+	z-index:2;
+}
+.banner-gift-close .close-layer{
+	position:absolute;
+	top:0; right:0; bottom:0; left:0;
+	margin:auto;
+	z-index:1;
+	display:block;
+	text-decoration:none;
+}

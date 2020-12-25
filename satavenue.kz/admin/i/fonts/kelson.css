@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'kelson_sans_rubold';
+    src: url('/admin/i/fonts/kelson_sans_bold_ru-webfont.eot');
+    src: url('/admin/i/fonts/kelson_sans_bold_ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/admin/i/fonts/kelson_sans_bold_ru-webfont.woff') format('woff'),
+         url('/admin/i/fonts/kelson_sans_bold_ru-webfont.ttf') format('truetype'),
+         url('/admin/i/fonts/kelson_sans_bold_ru-webfont.svg#kelson_sans_rubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kelson_sans_rulight';
+    src: url('/admin/i/fonts/kelson_sans_light_ru-webfont.eot');
+    src: url('/admin/i/fonts/kelson_sans_light_ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/admin/i/fonts/kelson_sans_light_ru-webfont.woff') format('woff'),
+         url('/admin/i/fonts/kelson_sans_light_ru-webfont.ttf') format('truetype'),
+         url('/admin/i/fonts/kelson_sans_light_ru-webfont.svg#kelson_sans_rulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kelson_sans_ruregular';
+    src: url('/admin/i/fonts/kelson_sans_regular_ru-webfont.eot');
+    src: url('/admin/i/fonts/kelson_sans_regular_ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/admin/i/fonts/kelson_sans_regular_ru-webfont.woff') format('woff'),
+         url('/admin/i/fonts/kelson_sans_regular_ru-webfont.ttf') format('truetype'),
+         url('/admin/i/fonts/kelson_sans_regular_ru-webfont.svg#kelson_sans_ruregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

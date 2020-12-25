@@ -1,0 +1,1257 @@
+@charset "UTF-8";
+@media all and (min-width:1400px){
+	section.reviewList{
+		width: 1450px;
+		text-align: center;
+		
+	}
+	section.main-page{
+		width: 1200px;
+	}
+	section.reviewList div.items{
+		text-align: justify;
+		text-align-last: left;
+	}
+	section.main-page div.items{
+		text-align: center;
+		text-align-last: center;
+	}
+	section.reviewList div.items div.review div.cover{
+		margin-right: 0;
+	}
+	section.reviewList div.items div.review div.info a.title{
+		text-align-last: center;
+	}
+		section.slider div.slide, section.slider{
+		height:25vw;
+	}
+}
+
+@media all and (max-width:1400px){
+		section.slider div.slide, section.slider{
+		height:25vw;
+	}
+}
+
+
+@media all and (max-width:1200px){
+	.slick-list .share .info{
+		max-width: 100%;
+	width: 100%;
+	height: 300px;
+}
+	a.show-banner-gift{
+		display:inline-block;
+		vertical-align:top;
+		text-decoration:none;
+		width:68px;
+		height:63px;
+		margin-left:10px;
+		margin-top:-4px;
+		margin-bottom:6px;
+	}
+	.body{
+		width:100%;
+	}
+	.disable-md{
+		display: none!important;
+	}
+	.enable-md{
+		display: block!important;
+	}
+	.burger{
+    	padding: 25px 0px 25px 0px;
+    	width: 42px;
+	}
+	.burger:before{
+		display: none;
+	}
+	.burger__icon , .burger__icon:before , .burger__icon:after{
+		background-color: #fffbfb;
+	}
+	.burger--active .burger__icon, .burger--active .burger__icon:before , .burger--active .burger__icon:after{
+		background-color: #a4a4a4;
+	}
+	.logo-center{
+		width: 100%;
+	}
+	section.reviewList div.items div.review:nth-child(2n+1){
+		margin-left:0px;
+	}
+	.page-header__logo-wrap{
+		margin: 0 auto;
+	}
+	menu.main div.basket a, div.basket a{
+		color:#ffffff;
+		background:url("/images/basket-white.svg") left top no-repeat;
+		float: left;
+	}
+	div.basket {
+	    margin-top: 12px;
+	    margin-left: 10px;
+	}
+	menu.main div.basket a:hover, menu.main div.basket a:focus, div.basket a:hover{
+		background-image:url("/images/basket-white.svg");
+	}
+	menu.main div.basket a span.total, div.basket a span.total{
+		color: #ffffff!important;
+	}
+	section.categoryInfo .leftMenu form{
+		padding: 20px 30px 20px 20px;
+	}
+	.vertical-middle{
+		margin-top: 5px;
+		/*Прошу не осуждать за такое решение*/
+	}
+	.basket-popover{
+		height: auto;
+	}
+	.langs{
+		height: 45px;
+	}
+	.langs-drop-btn , .login-drop-btn{
+		height: 45px;
+		font-size: 16px;
+	    border: none;
+		background-color: #4CAF50;
+	    color: white;
+	}
+	.login-drop-btn{
+		width: auto;
+	}
+	.langs-drop-btn{
+		width: 45px;
+		font-weight: 700;
+	}
+	.login-drop-btn{
+		background-color: #ffb22a;
+	    font-weight: 700;
+	}
+	.login-drop-btn span{
+		display: inline-block;
+		width: 55%;
+		vertical-align: middle;
+		font-weight: 700;
+	}
+	.login-drop-btn span:first-child{
+		width: 35%;
+   		vertical-align: middle;
+	}
+	/* The container <div> - needed to position the dropdown content */
+	.langs , .login {
+	    position: relative;
+	    display: inline-block;
+	}
+	.langs{
+		padding: 0px;
+	}
+	/* Dropdown Content (Hidden by Default) */
+	.drop-list {
+	    display: none;
+	    position: absolute;
+	    background-color: #f1f1f1;
+	    min-width: 60px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 100;
+	}
+	/* Links inside the dropdown */
+	.drop-list a {
+	    color: black;
+	    padding: 12px 10px;
+	    text-decoration: none;
+	    display: block;
+	    margin: 0;
+	}
+	/* Change color of dropdown links on hover */
+	.drop-list a:hover {background-color: #ddd}
+
+	/* Show the dropdown menu on hover */
+	.langs:hover .drop-list , .login:hover .drop-list {
+	    display: block;
+	}
+	.langs__item:after , .page-header__link:before , .page-header__link:after{
+		content: none;
+		margin: 0;
+	}
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.langs:hover .langs-drop-btn {
+	    background-color: #3e8e41;
+	}
+	.login:hover .login-drop-btn {
+	    background-color: #a1711d;
+	}
+	.page-header__link{
+		width: 169px;
+	}
+	.search__input{
+		max-width: 250px;
+	}
+	.float-right{
+		float: right;
+	}
+	.feedback__phone{
+		margin: 0px;
+	}
+	.page-header__up-balance-wrap{
+		width: 45px;
+		margin-left: 0;
+		height: 45px;
+	}
+	.special-margin{
+		margin-left: -1px;
+		margin-right: -1px;
+	}
+/*	.page-header__up-balance{
+	    background: url(/images/money-bag.svg) top no-repeat;
+	    background-size: contain;
+	    height: 86%;
+	}*/
+	.page-header__up-balance{
+	    background: url(/images/wallet.svg) top no-repeat;
+	    background-size: contain;
+	    height: 35px;
+	}
+	.user-circle{
+		background: url(/images/user-circle.svg) top no-repeat;
+	    background-size: contain;
+    	height: 35px;
+    	width: 40%;
+    	vertical-align: middle;
+	}
+	.user-circle:focus{
+		border:none;
+	}
+	.body .enable-md:nth-child(2){
+		padding-bottom: 10px;
+	}
+	body > *{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	section.languages{
+		padding:0;
+	}
+	menu.main{
+		padding:20px 0 0;
+		/*position: relative;*/
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		background:#fff;
+		z-index:120;
+	}
+	menu.main a.menu{
+		display:inline-block;
+		background:url("/images/menu.svg") center center no-repeat;
+		background-size:contain;
+		width:37px;
+		height:22px;
+		margin:0 20px 0 20px;
+		vertical-align:middle;
+		text-decoration:none;
+	}
+	menu.main a.logo{
+		width:77px;
+		height:50px;
+		margin:0;
+		vertical-align:middle;
+	}
+	menu.main div.menuScroll{
+		height:35px;
+		overflow:hidden;
+		padding:0 20px;
+		background:#000;
+		margin:20px 0 0;
+		clear:both;
+	}
+	menu.main div.items{
+		padding:0;
+		float:none;
+		z-index:1;
+		height:40px;
+		margin:0;
+		white-space:nowrap;
+		overflow:auto;
+		background:#000;
+	}
+	menu.main div.items div.item{
+		height:35px;
+		vertical-align:top;
+	}
+	menu.main div.items a,
+	menu.main div.items div.item:before{
+		color:#fff;
+	}
+	menu.main div.items div.item:first-child a{
+		padding-left:0;
+	}
+	menu.categories{
+		position:fixed;
+		width:100%;
+		top:0;
+		background:#000;
+		padding:0;
+		left:-100%;
+		-webkit-transition:left 0.3s;
+		-moz-transition:left 0.3s;
+		-ms-transition:left 0.3s;
+		-o-transition:left 0.3s;
+		transition:left 0.3s;
+		z-index:100;
+		height:100vh;
+		padding-top:125px;
+		overflow:auto;
+	}
+	menu.categories.visible{
+		left:0;
+	}
+	menu.categories div.item{
+		display:block;
+	}
+	menu.categories div.item > a{
+		display:block;
+	}
+	menu.categories div.item ul{
+		position:initial;
+		display:none;
+		max-height:none;
+	}
+	menu.categories div.item:focus ul,
+	menu.categories div.item:hover ul{
+		display:block;
+	}
+	menu.categories div.items{
+		float:none;
+		width:100%;
+	}
+	menu.categories div.item > a{
+		padding:0 20px;
+	}
+	menu.categories div.items div.item:after{
+		display:none;
+	}
+	section.search{
+		padding:10px 0;
+	}
+	section.search div.search{
+		width:100%;
+		display:table !important;
+		padding-bottom:10px;
+	}
+	section.search div.search form{
+		display:block !important;
+		position:relative;
+		margin-bottom:40px;
+	}
+	section.search div.search form div{
+		display:table-cell !important;
+		vertical-align:top;
+	}
+	section.search div.search form div.text{
+		width:100%;
+	}
+	section.search div.search form div input{
+		width:100% !important;
+	}
+	section.search div.search input.text{
+		width:100%;
+	}
+	section.search div.search form div{
+		width:100px;
+		position:absolute;
+		right:0;
+	}
+	section.search div.search input.submit{
+		padding:0 20px;
+		line-height:38px;
+		margin:auto;
+	}
+	section.search div.contacts{
+		width:60%;
+	}
+	section.search div.callback{
+		width:40%;
+		position:initial;
+	}
+	menu.main div.basket{
+		width:auto;
+		float:right;
+		padding:8px 20px 7px 0;
+		vertical-align:middle;
+	}
+	section.slider div.slide{
+		background-size:auto 100% !important;
+	}
+	.slide-box{
+		max-width:none !important;
+	}
+	.pro-car-out{
+		padding:0 !important;
+	}
+	section.slider div.slide, section.slider{
+		height:25vw;
+	}
+	section.reviews div.items div.review,
+	section.categoryInfo div.productList div.products div.product.grid,
+	section.productList div.items div.product{
+		width: 290px;
+	}
+	section.advantages h2.title,
+	section.reviews h2.title,
+	section.productList h2.title{
+		padding:20px 0;
+	}
+	section.reviews div.items div.review a.review,
+	section.categoryInfo div.productList div.products div.product.grid a.product,
+	section.productList div.items div.product a.product{
+		text-align:center;
+	}
+	section.mainPageInfo{
+		padding:20px;
+	}
+	section.advantages div.list{
+		padding:0;
+	}
+	footer.footer{
+		padding:20px;
+	}
+	footer.footer dl.item{
+		margin:0;
+	}
+	footer.footer dl.item.categories{
+		width: 18.4%;
+	}
+	footer.footer dl.item + dl.item{
+		margin-left: 1%;
+	}
+	footer.footer dl.item.customers{
+		width: 27%;
+	}
+	footer.footer dl.item.contacts{
+		width: 15.4%;
+	}
+	footer.footer dl.item.subscribe{
+		width: 31.1%;
+	}
+	footer.footer dl.item.subscribe form input.submit,
+	footer.footer dl.item.subscribe form input.text{
+		width:100%;
+	}
+	section.textPage{
+	}
+	section.textPage img{
+		width:auto;
+		height:auto;
+		max-height:100%;
+		max-width:100%;
+	}
+	section.reviews.blockSlider div.slides div.container{
+		position:initial;
+		white-space:nowrap;
+		overflow:auto;
+	}
+	section.reviews.blockSlider div.slides div.items{
+		max-width:none;
+		width:100%;
+		text-align: center;
+		
+	}
+	section.reviews.blockSlider div.items div.review{
+		width:340px;
+	}
+	section.reviews.blockSlider div.items div.review + div.review{
+		margin:0 0 0 29px !important;
+	}
+	section.reviews div.items div.review a.review img{
+		height: 250px;
+	}
+
+	section.reviews div.pages{
+		display:none;
+	}
+	nav.breadcrumbs{
+		padding:10px 20px;
+	}
+	div#callBack.visible{
+		top:267px !important;
+	}
+	section.contactPage div.line{
+		width:100%;
+		display:block;
+	}
+	section.contactPage div.line div.contactsMap{
+		display:block;
+		width:100%;
+		padding:0;
+	}
+	section.contactPage div.line div.form{
+		display:block;
+		margin:20px 0 0;
+		width:100%;
+	}
+	section.contactPage div.line div.form form .rows{
+		display:block;
+		padding:0 0 20px;
+	}
+	section.contactPage div.line div.form form .row{
+		width:100%;
+		float:none;
+	}
+	section.contactPage div.line div.form form .row + .row{
+		margin:20px 0 0 !important;
+	}
+	section.contactPage div.line div.contactsMap div#map *{
+		max-width:none;
+	}
+	div.tabs{
+		margin:0;
+	}
+	div.tabs a.tab{
+		-webkit-transform:none;
+		-moz-transform:none;
+		-ms-transform:none;
+		-o-transform:none;
+		transform:none;
+		display:block;
+		padding:0 20px;
+	}
+	div.tabs a.tab span{
+		-webkit-transform:none;
+		-moz-transform:none;
+		-ms-transform:none;
+		-o-transform:none;
+		transform:none;
+	}
+	section.signInUp div.tabItems div.tab form div.row{
+		width:100%;
+		margin:0 !important;
+		float:none;
+	}
+	section.signInUp div.tabItems div.tab form div.row + div.row{
+		margin-top:20px !important;
+	}
+	section.signInUp div.tabItems div.tab form div.cond{
+		margin-top:20px;
+	}
+	section.addFunds div.formBlock{
+		width:100%;
+		display:block;
+	}
+	section.addFunds div.formBlock div.leftBlock,
+	section.addFunds div.formBlock div.rightBlock{
+		display:block;
+		width:100%;
+		border:0;
+		padding:0;
+	}
+	section.addFunds div.formBlock div.form,
+	section.addFunds div.formBlock div.brandTabs{
+		float:none;
+		width:100%;
+		padding:0 0 20px;
+	}
+	section.categoryInfo div.leftMenu{
+		display:block;
+		float:none;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	section.categoryInfo{
+		display:block;
+	}
+	.pagesNum{
+		padding:20px 0 0;
+	}
+	section.productInfo{
+		padding:0;
+	}
+	section.productInfo div.mainInfo{
+		display:block;
+	}
+	section.productInfo div.mainInfo div.photos{
+		float:none;
+		width:100%;
+	}
+	section.productInfo div.mainInfo div.photos div.cover{
+		padding:0;
+	}
+	section.productInfo div.mainInfo div.photos div.list{
+		padding:20px 20px 0;
+	}
+	section.productInfo div.mainInfo div.info{
+		width:100% !important;
+		float:none !important;
+		padding:20px 20px 0 !important;
+	}
+	section.productInfo div.mainInfo div.order{
+		width:100%;
+		float:none;
+		padding:20px 0 0;
+	}
+	section.productInfo div.mainInfo div.order form.order div.form h2.title{
+		max-width:none;
+	}
+	section.productInfo div.tabInfo div.tabBlocks > div.tab{
+		padding:20px;
+	}
+	section.categoryInfo div.productList{
+		float: none;
+		margin: 0 auto;
+	}
+	section.categoryInfo div.productList div.panel form select{
+		margin-right:20px;
+	}
+	section.categoryInfo div.productList div.panel{
+		padding:20px 0 0;
+	}
+	section.categoryInfo div.productList div.products div.product.list{
+		height:auto;
+		margin:0;
+	}
+	section.categoryInfo div.productList div.products div.product.list + div.product.list{
+		margin-top:20px;
+	}
+	section.categoryInfo div.productList div.products div.product.list div.photos{
+		float:none;
+		width:100%;
+		border-right:0;
+		border-bottom:1px solid #c2c2c2;
+		padding:0 0 20px;
+		margin:0 0 20px;
+	}
+	section.categoryInfo div.productList div.products div.product.list div.photos div.cover{
+		width:100%;
+		float:none;
+	}
+	section.categoryInfo div.productList div.products div.product.list div.photos div.list{
+		float:none;
+		height:auto;
+		width:auto;
+		margin:0;
+		letter-spacing:20px;
+		font-size:0;
+	}
+	section.categoryInfo div.productList div.products div.product.list div.photos div.list a{
+		display:inline-block;
+	}
+	section.categoryInfo div.productList div.products div.product.list div.info{
+		margin:0;
+		float:none;
+		width:auto;
+		padding:0;
+	}
+	section.categoryInfo div.productList div.products div.product.list div.info div.annotation{
+		height:auto;
+	}
+	section.categoryInfo div.productList div.products div.product.list div.info div.more{
+		padding:20px 0 0;
+	}
+	section.productInfo div.mainInfo div.order form.order{
+
+	}
+	section.productInfo div.mainInfo div.order form.order h2.title{
+		padding:0 20px 20px;
+	}
+	section.ShareList div.items div.share{
+		height:auto;
+		margin:0;
+		flex-direction: column;
+	}
+	section.ShareList div.items div.share:nth-child(odd) div.cover{
+		order:initial;
+		margin-bottom: -3px;
+	}
+	section.ShareList div.items div.share div.cover a img{
+		width: 100%;
+	}
+	section.ShareList div.items div.share + div.share{
+		margin-top:40px;
+	}
+	section.ShareList div.items div.share div.cover{
+		float:none;
+		height:auto;
+		margin:0 0 -3px;
+	}
+	section.ShareList div.items div.share div.info div.finish{
+		margin-left: -19px;
+	}
+	section.ShareList div.items div.share div.info{
+		float:none;
+		width:auto;
+		margin-right:0;
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+	section.ShareList div.items div.share:nth-child(even) div.info{
+		margin-left: 0;
+	}	
+	section.ShareList div.items div.share div.info div.description{
+		height:auto;
+	}
+	section.reviewList div.items{
+		display:block;
+		text-align: center;
+		-ms-text-align-last: center;
+		text-align-last: center;
+	}
+	section.reviewList div.items div.review{
+		float:none;
+		display: inline-block;
+		text-align-last: left;
+		text-align: left;
+		margin:20px 0 0;
+	}
+	section.reviewList div.items div.review:nth-child(even){
+		margin-left: 10px;
+	}
+	section.reviewList div.items div.review div.cover{
+		float:none;
+		text-align:center;
+		margin:0 0 20px;
+	}
+	section.reviewList div.items div.review div.cover{
+		float:none;
+		text-align:center;
+		margin:0 0 20px;
+	}
+	section.reviewList div.items div.review div.info{
+		float:none;
+	}
+	section.reviewList div.items div.review div.info div.description{
+	}
+	section.simServices div.payTabs{
+
+	}
+	section.simServices div.payTabs input.radio + label{
+		display:block;
+	}
+	section.simServices div.payTabs input.radio + label + input.radio + label{
+		margin:10px 0 0;
+	}
+	section.simServices div.tabItems div.line{
+		margin:0;
+		display:block;
+	}
+	section.simServices > div.tabItems > div.tab div.line{
+		display:block;
+	}
+	section.simServices > div.tabItems > div.tab div.line div.leftBlock{
+		width:auto;
+		padding:20px;
+	}
+	section.simServices > div.tabItems > div.tab div.line div.leftBlock div.tabItems{
+
+	}
+	section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio + label{
+		display:block;
+	}
+	section.simServices > div.tabItems > div.tab div.line div.leftBlock div.typeItems input.radio + label + input.radio + label{
+		margin:10px 0 0;
+	}
+	section.simServices > div.tabItems > div.tab div.line div.rightBlock{
+		display:block;
+		width:auto;
+	}
+	section.simServices > div.tabItems > div.tab div.submit{
+		display:block;
+	}
+	section.simServices > div.tabItems > div.tab div.submit div.info{
+		width:auto;
+		float:none;
+	}
+	section.simServices > div.tabItems > div.tab div.submit div.submit{
+		float:none;
+		width:auto;
+	}
+	section.simServices > div.tabItems > div.tab.postpaid div.line{
+		display:block;
+	}
+	section.reviewList div.main-items div.review:nth-child(even){
+		margin-left: unset;
+	}
+	section.reviewList div.main-items div.review div.cover{
+		text-align: center;
+		text-align-last: center;
+	}
+	section.reviewList div.main-items div.review{
+		text-align-last: center;
+		
+	}
+	section.simServices > div.tabItems > div.tab.postpaid div.line div.right,
+	section.simServices > div.tabItems > div.tab.postpaid div.line div.left{
+		width:auto;
+		float:none;
+		display:block;
+	}
+	section.simServices > div.tabItems > div.tab.postpaid div.line div.right{
+		margin:20px 0 0;
+	}
+	section.simServices > div.tabItems > div.tab.postpaid div.line div.left div.row{
+		float:none;
+		display:block;
+		width:auto;
+		margin:0;
+	}
+	section.simServices > div.tabItems > div.tab.postpaid div.line div.left div.row + div.row{
+		margin-top:20px;
+	}
+	section.simServices > div.tabItems > div.tab.postpaid div.submit{
+		padding:20px 0 0;
+	}
+	section.signBlock div.authInfo{
+		display:block;
+	}
+	section.signBlock div.authInfo div.infoBlock{
+		width:100%;
+		float:none;
+		display:block;
+		padding:0 0 20px;
+		margin:0 0 20px;
+		border-bottom:1px solid #008c9f;
+		border-right:0;
+	}
+	section.signBlock div.authInfo div.feedbackBlock{
+		display:block;
+		width:100%;
+		padding:0;
+	}
+	.feedback__icon{
+		margin-left: 0px;
+	}
+	section.signBlock div.authInfo div.submit{
+		position:initial;
+	}
+	section.signBlock div.authInfo div.submit .edit + .submit, section.signBlock div.authInfo div.submit .submit + .edit{
+		margin:10px 0 0;
+	}
+	.mainBanner img{
+		height:auto !important;
+	}
+	menu.main div.items div.item.funds{
+		float:right;
+	}
+	div.body div.enable-md:first-child{
+		margin-bottom: 10px;
+	}
+		.feedback__icon{
+		height: 45px;
+		width: 46px;
+    	background-size: 60% 60%;
+    }
+    .search{
+    	height: 45px;
+    	width: 45px;
+    }
+    .search__button{
+    	height: 45px;
+    	width: 45px;
+    }
+    .search__input{
+    	height: 45px;
+    	right: 45px;
+    }
+    .search__icon{
+    	height: 45px;
+    	width: 45px;
+    	background-size: 60% 60%;
+    }
+    .search--active .search__button{
+    	transform: translateX(-295px);
+    }
+    section.categoryInfo div.productList div.products{
+    	display: flex;
+    	align-items: baseline;
+    	flex-wrap: wrap;
+    	justify-content: space-evenly;
+    }
+    section.categoryInfo div.productList div.products:after{
+    	content: "";
+    	flex-basis: 290px;
+    }
+    .pagesNum{
+    	flex-grow: 12;
+    	width: 100%;
+    	flex-basis: 100%;
+    	order: 12;
+    }
+    .page-nav{
+    	top: 121px;
+    }
+    div#callBack {
+    	display: none;
+    }
+    .index-class{
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    }
+    .index-class .share:first-child{
+    	float: unset;
+    	margin: 0 auto;
+    	width: 624px;
+    	display: block;
+    	margin-bottom: 20px;
+    }
+    .productList .index-class #wrapper-four{
+    	width: auto;
+    	height: 605px;
+    	margin: 0px auto;
+    	margin-top: 20px;
+    	margin-bottom: 20px;
+    	width: 590px;
+    	order: 1;
+    }
+    .productList .index-class #wrapper-four .product{
+    	margin:0px!important;
+    	margin-bottom: 20px!important;
+    }
+    .productList .index-class #wrapper-four .product:nth-child(2n+2){
+    	margin-left: 20px!important;
+    }
+    #wrapper-left{
+    	order: 2;
+    	width: 51.2%;
+    	text-align: right;
+    }
+    #wrapper-left .product:nth-child(1){
+    	margin-bottom: 20px!important;
+    }
+    #wrapper-right{
+	  	width: 285px;
+	  	vertical-align: top;
+	  	order: 3;
+	  	margin-left: -3px;
+  	}
+  	#wrapper-right .product:nth-child(1){
+  		margin-bottom: 20px!important;
+  	}
+  	.index-class .share:first-child{
+  		margin: 0 auto;
+  		width: 590px;
+  	}
+	.index-class .share:nth-child(4) {
+	    order: 4;
+	    width: 590px;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	}
+	.slide-index .share:first-child{
+		height: auto;
+		width: 100%!important;
+	}
+	.slide-index div.share .cover{
+		width: 100%;
+		height: ;
+	}
+	#product-slider{
+		height: 400px;
+	}
+	section.productList div.items div.product a.product img{
+		display: inline-block;
+	}
+	#product-slider .slick-list{
+		height: 371px;
+	}
+}
+@media all and (max-width: 922px){
+	footer.footer dl.item.subscribe{
+		width: 350px;
+	}
+	footer.footer dl.item.contacts{
+		width: 175px;
+	}
+	footer.footer dl.item.customers{
+		width: 300px;
+	}
+	footer.footer dl.item.categories{
+		width: 205px;
+	}
+	section.categoryInfo div.productList div.products{
+    	justify-content: space-around;
+    }
+    section.productList div.items div.product{
+	    margin-left: 3px;
+	    margin-right: 3px;
+    }
+	section.reviewList div.items div.review:hover div.info{
+		height: auto;
+		background-color: #00000063;
+	}
+	section.reviewList div.items div.review:hover div.info .description{
+		display: none;
+	}
+	section.reviewList div.items div.review:hover div.info .more{
+		display: block;
+	}
+	section.reviewList div.items div.review:hover div.info .more div.date{
+		color: #d6d6d6!important;
+	}
+	section.reviewList div.items div.review div.info a.title{
+		margin: 0;
+	}
+	section.reviewList div.items div.review .mega-cover{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 200;
+		font-size: 0;
+	}
+	footer.footer dl.item{
+		margin-bottom: 20px;
+	}
+}
+@media all and (max-width:814px){
+	section.reviewList div.items div.review:nth-child(even){
+		margin-left: 0px;
+	}
+}
+@media all and (max-width:800px){
+	section.brands{
+		padding:30px 0 10px;
+	}
+	#wrapper-left{
+		width: 51.5%;
+	}
+	section.brands a{
+		display:inline-block !important;
+		vertical-align:top;
+		margin:0 15px 15px;
+		max-height:50px;
+		text-align:center;
+		padding:0 !important;
+		width:125px
+	}
+	section.brands a img{
+		max-width:100%;
+		max-height:100%;
+	}
+	section.brands a.inmarsat{
+		margin-top:-10px;
+		margin-bottom:10px;
+	}
+	section.brands a + a:before{
+		display:none;
+	}
+	menu.main div.menuScroll{
+		margin:5px 0 0;
+	}
+	menu.main div.items a{
+		padding:0 10px;
+	}
+	menu.main div.items div.item.funds{
+		float:none;
+	}
+	section.search div.contacts{
+		width:35%;
+	}
+	section.search div.callback{
+		width:65%;
+	}
+	menu.main a.menu{
+		margin:0 10px;
+	}
+	a.show-banner-gift{
+		width:58px;
+		height:63px;
+		margin-left:5px;
+	}
+	.banner-gift-close .img-banner img{
+		max-width:100%;
+	}
+	menu.main a.logo{
+		width:74px;
+	}
+	.login-drop-btn span{
+		display: none;
+	}
+	.user-circle{
+		width: 50px!important;
+		display: inline-block!important;
+	}
+	.login:hover .drop-list{
+		max-width: 150px;
+	}
+
+    .drop-list{
+    	left: -17px;
+    }
+    .langs .drop-list{
+    	left: -15px;
+    }
+}
+@media all and (max-width:630px){
+	div.index-class div.product{
+		width: 48%!important;
+	}
+	div.slick-list div.product{
+		width: unset!important;
+	}
+	#wrapper-left .product{
+		width: 93.4%!important;
+	}
+	#wrapper-right{
+		width: 48.3%;
+	}
+	#wrapper-right .product{
+		width: 99.3%!important;
+	}
+}
+@media all and (max-width:539px){
+	div.index-class div.product{
+		width: 47.8%!important
+	}
+	div.slick-list div.product{
+		width: unset!important;
+	}	
+	footer.footer dl.item + dl.item{
+		margin-left: 0;
+	}
+	footer.footer dl.item.subscribe{
+		width: 100%;
+	}
+	footer.footer dl.item.contacts{
+		width: 100%;
+	}
+	footer.footer dl.item.customers{
+		width: 100%;
+	}
+	footer.footer dl.item.categories{
+		width: 100%;
+	}
+	section.reviewList div.items div.review{
+		width: 100%;
+	}
+}
+@media all and (max-width:493px){
+	section.productList div.index-class #wrapper-four div.product{
+		width: 310px!important;
+		margin: 0 auto!important;
+		margin-bottom: 20px!important;
+	}	
+	.productList .index-class #wrapper-four .product:nth-child(2n+2){
+		margin-left: 0px!important;
+	}
+	.productList .index-class #wrapper-four{
+		height: auto;
+		text-align: center;	
+	}
+	#wrapper-left{
+		width: 100%;
+		text-align: center;
+		
+	}
+	#wrapper-left .product{
+		width: 310px!important;
+		margin: 0 auto!important;
+	}
+	.productList .index-class #wrapper-four{
+		margin-bottom: unset;
+	}
+	#wrapper-right{
+		width: 100%;
+		text-align: center;
+		margin-left: unset;
+		margin-top: 20px;
+	}
+	#wrapper-right .product{
+		width: 310px!important;
+		margin: 0 auto!important;
+	}
+	.index-class .share:first-child{
+		width: 310px;
+	}
+	.index-class .share:nth-child(4){
+		width: 310px;
+	}
+	.index-class .share .cover img{
+	/*	height: 300px; */
+	}
+	section.advantages div.list div.item{
+		display: block;
+		width: 100%;
+	}
+}
+@media all and (max-width:498px){
+	.sharesList .items .slick-dotted.slick-slider{
+		padding-bottom: 20px;
+	}
+}
+@media all and (max-width:480px){
+	div.basket a span.total{
+		display: none;
+	}
+	section.reviewList div.main-items div.review{
+		height: 400px;
+	}
+	section.reviewList div.main-items div.review div.info{
+		height: 180px;
+	}
+}
+@media all and (max-width:400px){
+	.author-info{
+	float: none;
+	}
+	section.languages div.types a{
+		padding:0 10px;
+	}
+	section.search div.callback a.callback{
+		padding:0 9px;
+	}
+	.search--active .search__button {
+	    transform: translateX(-205px);
+	}
+	.search__input {
+    max-width: 160px;
+    }
+}
+@media all and (max-width:340px){
+    .drop-list{
+    	left: -12px;
+    }
+    .page-header__up-balance-wrap{
+    	width: 55px;
+    }
+    .login:hover .drop-list{
+    	max-width: 155px;
+    }
+    .search__input{
+    	max-width: 190px;
+    }
+    .search--active .search__button{
+    	transform: translateX(-235px);
+    }
+}
+@media all and (max-width:600px){
+		section.textPage img{
+		width:auto;
+		height:auto;
+		max-height:50%;
+		max-width:100%;
+	}
+}
+
+@media all and (max-width:700px){
+		section.slider div.slide, section.slider{
+		height:40vw;
+	}
+
+	.wm_body{
+		background: #0098ae url(/images/warning-message-icon.png) no-repeat center 8px / 70px 70px;
+		padding-left: 0;
+		padding-top: 85px;
+	}
+	.wm_content{
+		padding: 15px 20px;
+	}
+	.wm_title{
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.wm_list{
+		font-size: 13px;
+		line-height: 22px;
+		padding-left: 22px;
+	}
+}

@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: /admin/
+Disallow: /modules/
+
+User-Agent: Yandex
+Disallow: /admin/
+Disallow: /modules/
+Host: http://www.satavenue.kz/
+Sitemap: http://www.satavenue.kz/sitemap.xml
+
