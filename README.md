@@ -9,5 +9,5 @@ Technologies: phpMail, VKAPI, PHPExcel, mpdf, pchart
 Wery hard project. Because four programmers worked with him before. And i was worked at legasy code.
 # medicine
 Old php project with PHPExcel integration
-# satavenue
+# satavenue.kz
 A project that had legacy code and in which I updated the front-end edits and added new modules.
